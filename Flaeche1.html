@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Flächenberechnungen</p>    <!--//Aufgabe 1-->
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 1
+
+Welchen Flächeninhalt A hat das Rechteck mit den 
+Seiten a = 36 mm und b = 47 mm in cm² ?</strong></p>
+<img src="Aufgabe1.jpg" align="middle" >  <button  onclick="window.open('Flaeche_Aufgabe1.html');" >Lösung</button></pre>
+
+<!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 2
+
+Welchen Flächeninhalt A hat das Rechteck mit den
+Seiten a = 17 cm ; b = 19 cm in mm²?   </strong>
+
+  <img src="Aufgabe1.jpg" align="middle"> A = <input type="text" id="Eintrag2" maxlength="5" size="2" style= background-color:yellow ></input> mm² <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="32300") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="32300" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="32300"; window.open('Flaeche_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+Welchen Flächeninhalt A hat das Rechteck mit den
+Seiten a = 1 500 m; b = 7,5 km in km²?  </strong>
+<button  onclick="window.open('Flaeche_Aufgabe3.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Welchen Flächeninhalt A hat das Rechteck mit den
+Seiten a = 1,3 dm ; b = 0,3 m in m²?   </strong>
+A = <input type="text" id="Eintrag4" maxlength="5" size="2" style= background-color:yellow ></input> m².<button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p><nobr>
+</pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="0,039") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="0,039" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="0,039"; window.open('Flaeche_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5</nobr>
+
+Wie groß ist die Fläche A eines Quadrates in cm², wenn 
+eine Seite a = 18 mm lang ist?  </strong>  <button  onclick="window.open('Flaeche_Aufgabe5.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Wie groß ist die Seite s eines Quadrates in cm, 
+das einem Rechteck mit den Seiten a = 5 cm und 
+b = 3 cm flächengleich ist?  </strong>  s = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef6" onclick="Aufgabe6()">Prüfen</button><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="3,9") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="3,9" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="3,9"; window.open('Flaeche_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7</nobr>
+
+Ein Quadrat hat einen Umfang von 16 cm. 
+Wie groß ist seine Fläche A in cm²?  </strong><button  onclick="window.open('Flaeche_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Ein Quadrat hat eine Fläche von 25 cm². 
+Wie groß ist sein Umfang U in cm?  </strong>
+U = <input type="text" id="Eintrag8" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef8" onclick="Aufgabe8()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="20") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="20" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="20"; window.open('Flaeche_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+  <!--//Aufgabe 9-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 9
+
+Wie groß ist A in mm², wenn die Grundseite g = 6,7 cm 
+und die Höhe h = 3,6 cm?  
+ <img src="Aufgabe9.jpg" align="middle"></strong> <button  onclick="window.open('Flaeche_Aufgabe9.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 10-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 10
+
+Wie groß ist h in cm, wenn die  Grundseite g = 3,7 cm 
+und die Fläche A = 15,54 dm²?  </strong>
+<img src="Aufgabe9.jpg" align="middle"> h = <input type="text" id="Eintrag10" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef10" onclick="Aufgabe10()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe10() { 
+                                                
+                          if (Eintrag10.value=="420") {alert("Richtig"); document.getElementById("Pruef10").disabled= true;
+                          }  
+                           
+                          else if (Eintrag10.value!=="420" && Eintrag10.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag10").value="420"; window.open('Flaeche_Aufgabe10.html');           
+                          document.getElementById("Pruef10").disabled= true;}
+                               
+                          else if (Eintrag10.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                                   
+
+ <!--//Aufgabe 11-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 11</nobr>
+
+ Wie groß ist g in cm, wenn die Höhe h = 5 m und die 
+ Fläche A = 6 m²?   </strong> 
+<img src="Aufgabe9.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe11.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 12-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 12
+
+Wie groß ist g in m, wenn die Höhe h = 250 cm  und die 
+Fläche A = 0,7 m²?   </strong>
+<img src="Aufgabe9.jpg" align="middle"> g = <input type="text" id="Eintrag12" maxlength="4" size="1" style= background-color:yellow ></input> m <button id="Pruef12" onclick="Aufgabe12()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe12() { 
+                                                
+                          if (Eintrag12.value=="0,28") {alert("Richtig"); document.getElementById("Pruef12").disabled= true;
+                          }  
+                           
+                          else if (Eintrag12.value!=="0,28" && Eintrag12.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag12").value="0,28"; window.open('Flaeche_Aufgabe12.html');           
+                          document.getElementById("Pruef12").disabled= true;}
+                               
+                          else if (Eintrag12.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+              
+    <!--//Aufgabe 13--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 13</nobr>
+
+Wie groß ist A in cm², wenn die Grundseite g = 60 mm 
+und die Höhe h = 18 mm?</strong> 
+<img src="Aufgabe13.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe13.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 14-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 14
+
+Wie groß ist h in cm, wenn die Fläche A = 40 m² 
+und die Grundseite g = 16 m? </strong>
+<img src="Aufgabe13.jpg" align="middle"> h = <input type="text" id="Eintrag14" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef14" onclick="Aufgabe14()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe14() { 
+                                                
+                          if (Eintrag14.value=="500") {alert("Richtig"); document.getElementById("Pruef14").disabled= true;
+                          }  
+                           
+                          else if (Eintrag14.value!=="500" && Eintrag14.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag14").value="500"; window.open('Flaeche_Aufgabe14.html');           
+                          document.getElementById("Pruef14").disabled= true;}
+                               
+                          else if (Eintrag14.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+     <!--//Aufgabe 15--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 15
+
+Wie groß ist g in dm, wenn die Fläche A = 150 m² 
+und die Höhe h = 10 m? </strong> 
+<img src="Aufgabe13.jpg" align="middle">  <button  onclick="window.open('Flaeche_Aufgabe15.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 16-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 16
+
+Wie groß ist h in cm, wenn die Fläche A = 100 cm²  
+und die Grundseite g = 25 dm?    </strong>
+<img src="Aufgabe13.jpg" align="middle"> h = <input type="text" id="Eintrag16" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef16" onclick="Aufgabe16()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe16() { 
+                                                
+                          if (Eintrag16.value=="0,8") {alert("Richtig"); document.getElementById("Pruef16").disabled= true;
+                          }  
+                           
+                          else if (Eintrag16.value!=="0,8" && Eintrag16.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag16").value="0,8"; window.open('Flaeche_Aufgabe16.html');           
+                          document.getElementById("Pruef16").disabled= true;}
+                               
+                          else if (Eintrag16.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+       <!--//Aufgabe 17--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 17
+
+Wie groß ist A in cm², wenn a = 56 mm, 
+c = 26 mm  und h = 31 mm?</strong>  
+<img src="Aufgabe17.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe17.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 18-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 18
+
+Wie groß ist h in mm, wenn a = 5,2 cm, 
+c = 3,8 cm  und A = 11,25 cm²?   </strong>
+<img src="Aufgabe17.jpg" align="middle"> h = <input type="text" id="Eintrag18" maxlength="2" size="1" style= background-color:yellow ></input> mm <button id="Pruef18" onclick="Aufgabe18()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe18() { 
+                                                
+                          if (Eintrag18.value=="25") {alert("Richtig"); document.getElementById("Pruef18").disabled= true;
+                          }  
+                           
+                          else if (Eintrag18.value!=="25" && Eintrag18.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag18").value="25"; window.open('Flaeche_Aufgabe18.html');           
+                          document.getElementById("Pruef18").disabled= true;}
+                               
+                          else if (Eintrag18.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+       <!--//Aufgabe 19--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 19
+
+Wie groß ist a in cm, wenn c = 48 mm , 
+h = 67 mm und A = 3015 mm²?    </strong> 
+<img src="Aufgabe17.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe19.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 20-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 20
+
+r = 5 cm. Wie groß ist die Fläche A in mm²? 
+Wie groß ist der Umfang U in dm?  </strong>
+<img src="Aufgabe20.jpg" align="middle"> A = <input type="text" id="Eintrag20" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef20" onclick="Aufgabe20()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe20() { 
+                                                
+                          if (Eintrag20.value=="7850") {alert("Richtig"); document.getElementById("Pruef20").disabled= true;
+                          }  
+                           
+                          else if (Eintrag20.value!=="7850" && Eintrag20.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag20").value="7850"; window.open('Flaeche_Aufgabe20.html');           
+                          document.getElementById("Pruef20").disabled= true;}
+                               
+                          else if (Eintrag20.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+         <!--//Aufgabe 21--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 21
+
+Durchmesser d = 1,5 m. Wie groß ist die Fläche A in cm²? 
+Wie groß ist der Umfang U in cm?  </strong> 
+<img src="Aufgabe20.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe21.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 22-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 22
+
+Fläche A = 16 610 600 mm². 
+Wie groß ist der Radius r in mm?   </strong>
+<img src="Aufgabe20.jpg" align="middle"> r = <input type="text" id="Eintrag22" maxlength="4" size="1" style= background-color:yellow ></input> mm <button id="Pruef22" onclick="Aufgabe22()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe22() { 
+                                                
+                          if (Eintrag22.value=="2300") {alert("Richtig"); document.getElementById("Pruef22").disabled= true;
+                          }  
+                           
+                          else if (Eintrag22.value!=="2300" && Eintrag22.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag22").value="2300"; window.open('Flaeche_Aufgabe22.html');           
+                          document.getElementById("Pruef22").disabled= true;}
+                               
+                          else if (Eintrag22.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+             <!--//Aufgabe 23--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 23
+
+Wie groß ist die Fläche A des Kreisrings in cm², 
+wenn der Außenradius r₁ = 12 mm  und der 
+Innenradius r₂ = 6,5 mm?  </strong> 
+<img src="Aufgabe23.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe23.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 24-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 24
+
+Außenradius r₁ = 18 cm ; Fläche A = 565,2 cm². 
+Wie groß ist r₂ in mm?   </strong>
+<img src="Aufgabe23.jpg" align="middle"> r<sub>2</sub> = <input type="text" id="Eintrag24" maxlength="3" size="1" style= background-color:yellow ></input> mm <button id="Pruef24" onclick="Aufgabe24()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe24() { 
+                                                
+                          if (Eintrag24.value=="120") {alert("Richtig"); document.getElementById("Pruef24").disabled= true;
+                          }  
+                           
+                          else if (Eintrag24.value!=="120" && Eintrag24.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag24").value="120"; window.open('Flaeche_Aufgabe24.html');           
+                          document.getElementById("Pruef24").disabled= true;}
+                               
+                          else if (Eintrag24.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+   <!--//Aufgabe 25--> 
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 25
+
+Innendurchmesser d₂ = 4,2 dm ; Fläche A = 2,7632 dm². 
+Wie groß ist r₁ in cm?    </strong> 
+<img src="Aufgabe23.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe25.html');" >Lösung</button></p></pre>
+
+	      <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Flaeche1.html');">zurück...</button>                
+          <button type="button" class ="Aufgabe" onclick="window.open('Flaeche2.html'); window.close('Flaeche1.html');">mehr...</button>    
+
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
