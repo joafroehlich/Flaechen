@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Flächenberechnungen</p>    
+        
+                    
+<!--//Aufgabe 109-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 109
+
+Wie groß ist der Durchmesser d eines Kreises 
+mit einer Fläche von 30 cm²?  </strong>   <button  onclick="window.open('Flaeche_Aufgabe109.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 110-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 110
+
+Wie groß ist der Umfang U eines Kreises 
+mit einer Fläche von 8 cm²?  </strong>  U = <input type="text" id="Eintrag110" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe110() { 
+                                                
+                          if (Eintrag110.value=="10") {alert("Richtig"); document.getElementById("Pruef110").disabled= true;
+                          }  
+                           
+                          else if (Eintrag110.value!=="10" && Eintrag110.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag110").value="10"; window.open('Flaeche_Aufgabe110.html');           
+                          document.getElementById("Pruef110").disabled= true;}
+                               
+                          else if (Eintrag110.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 111-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 111
+
+Wie groß ist die schraffierte Fläche? </strong>  
+
+<img src="Aufgabe111.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe110.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 112-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 112
+
+Wie groß ist die schraffierte Fläche?  </strong> 
+
+<img src="Aufgabe112.jpg" align="middle"> 
+
+Sie ist <input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input> cm² groß. <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe112() { 
+                                                
+                          if (Eintrag112.value=="28,2") {alert("Richtig"); document.getElementById("Pruef112").disabled= true;
+                          }  
+                           
+                          else if (Eintrag112.value!=="28,2" && Eintrag112.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag112").value="28,2"; window.open('Flaeche_Aufgabe112.html');           
+                          document.getElementById("Pruef112").disabled= true;}
+                               
+                          else if (Eintrag112.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 113-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 113
+
+AB ist durch T stetig geteilt. In welchem Verhältnis stehen 
+A₁, A₂ und A₃ zueinander?  </strong>   
+
+<img src="Aufgabe113.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe113.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 114-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 114
+
+Ein Kreisring hat einen inneren Radius von 5 cm 
+und eine Fläche von 12 cm²? 
+Wie groß ist der äußere Radius ra? </strong>   
+
+r<sub>a</sub> = <input type="text" id="Eintrag114" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe114() { 
+                                                
+                          if (Eintrag114.value=="5,4") {alert("Richtig"); document.getElementById("Pruef114").disabled= true;
+                          }  
+                           
+                          else if (Eintrag114.value!=="5,4" && Eintrag114.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag114").value="5,4"; window.open('Flaeche_Aufgabe114.html');           
+                          document.getElementById("Pruef114").disabled= true;}
+                               
+                          else if (Eintrag114.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>   
+                      
+<!--//Aufgabe 115-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 115
+
+Ein Kreisring hat eine Fläche von 40 cm². 
+Die Summe seiner Radien ergibt 20 cm. 
+Wie groß ist der Innenradius r<sub>i</sub>? </strong> <button  onclick="window.open('Flaeche_Aufgabe115.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 116-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 116
+
+Ein Kreisring hat einen Außenradius von 12 cm. 
+Er soll die gleiche Fläche wie sein Innenkreis haben. 
+Wie groß ist der Innenradius r<sub>i</sub>? </strong> 
+
+r<sub>i</sub> = <input type="text" id="Eintrag116" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe116() { 
+                                                
+                          if (Eintrag116.value=="8,5") {alert("Richtig"); document.getElementById("Pruef116").disabled= true;
+                          }  
+                           
+                          else if (Eintrag116.value!=="8,5" && Eintrag116.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag116").value="8,5"; window.open('Flaeche_Aufgabe116.html');           
+                          document.getElementById("Pruef116").disabled= true;}
+                               
+                          else if (Eintrag116.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 117-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 117
+
+Die Seite eines gleichseitigen Dreiecks von 6 cm sei gleich 
+dem Außenradius eines Kreisrings, seine Höhe gleich dem Innenradius. 
+In welchem Verhältnis steht die Fläche des Kreisrings zur Fläche 
+des Innenkreises?  </strong> <button  onclick="window.open('Flaeche_Aufgabe117.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 118-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 118
+
+Ein rechteckiges Bauteil mit einer Länge von 24 cm und einer 
+Breite von 15 cm soll durch ein kreisrundes ersetzt werden. 
+Wie groß muss dessen Durchmesser d sein? </strong> 
+
+d = <input type="text" id="Eintrag118" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe118() { 
+                                                
+                          if (Eintrag118.value=="21,4") {alert("Richtig"); document.getElementById("Pruef118").disabled= true;
+                          }  
+                           
+                          else if (Eintrag118.value!=="21,4" && Eintrag118.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag118").value="21,4"; window.open('Flaeche_Aufgabe118.html');           
+                          document.getElementById("Pruef118").disabled= true;}
+                               
+                          else if (Eintrag118.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 119-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 119
+
+Wie groß sind der Mittelpunktswinkel α und die Fläche A? </strong>
+
+<img src="Aufgabe119.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe119.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 120-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 120
+
+Wie groß ist die schraffierte Fläche A?  </strong> 
+
+<img src="Aufgabe120.jpg" align="middle"> A = <input type="text" id="Eintrag120" maxlength="3" size="1" style= background-color:yellow ></input> cm² <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe120() { 
+                                                
+                          if (Eintrag120.value=="117") {alert("Richtig"); document.getElementById("Pruef120").disabled= true;
+                          }  
+                           
+                          else if (Eintrag120.value!=="117" && Eintrag120.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag120").value="117"; window.open('Flaeche_Aufgabe120.html');           
+                          document.getElementById("Pruef120").disabled= true;}
+                               
+                          else if (Eintrag120.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 121-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 121
+
+Wie groß ist die schraffierte Fläche A? </strong>  
+
+<img src="Aufgabe121.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe121.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 122-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 122
+
+Der Bogen b eines Kreissektors sei gleich dem Radius 
+r = 4 cm des Kreises. 
+Wie groß sind die Sektorfläche A und der Radius r₁ eines 
+Kreises, der dem Sektor flächengleich ist?  </strong> 
+
+A = <input type="text" id="Eintrag122" maxlength="1" size="1" style= background-color:yellow ></input> cm² <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe122() { 
+                                                
+                          if (Eintrag122.value=="8") {alert("Richtig"); document.getElementById("Pruef122").disabled= true;
+                          }  
+                           
+                          else if (Eintrag122.value!=="8" && Eintrag122.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag122").value="8"; window.open('Flaeche_Aufgabe122.html');           
+                          document.getElementById("Pruef122").disabled= true;}
+                               
+                          else if (Eintrag122.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 123-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 123
+
+Wie groß ist die schraffierte Fläche A?  </strong>   
+
+<img src="Aufgabe123.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe123.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 124-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 124
+
+Sektor und Segment eines Kreises seien flächengleich. 
+Wie groß muss der Bogen b des Sektors sein, wenn der Bogen b₁ 
+des Segments 5 cm , die Bogenhöhe 1 cm und die Sehne 4 cm betragen? </strong> 
+
+b = <input type="text" id="Eintrag124" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe124() { 
+                                                
+                          if (Eintrag124.value=="2,6") {alert("Richtig"); document.getElementById("Pruef124").disabled= true;
+                          }  
+                           
+                          else if (Eintrag124.value!=="2,6" && Eintrag124.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag124").value="2,6"; window.open('Flaeche_Aufgabe124.html');           
+                          document.getElementById("Pruef124").disabled= true;}
+                               
+                          else if (Eintrag124.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 125-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 125
+
+Wie groß ist die schraffierte Fläche A? </strong>   
+
+<img src="Aufgabe125.jpg" align="middle">  <button  onclick="window.open('Flaeche_Aufgabe125.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 126-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 126
+
+Wie groß ist die schraffierte Fläche A? </strong> 
+
+<img src="Aufgabe126.jpg" align="middle"> A = <input type="text" id="Eintrag126" maxlength="3" size="1" style= background-color:yellow ></input> cm² <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe126() { 
+                                                
+                          if (Eintrag126.value=="5,2") {alert("Richtig"); document.getElementById("Pruef126").disabled= true;
+                          }  
+                           
+                          else if (Eintrag126.value!=="5,2" && Eintrag126.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag126").value="5,2"; window.open('Flaeche_Aufgabe126.html');           
+                          document.getElementById("Pruef126").disabled= true;}
+                               
+                          else if (Eintrag126.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+ <!--//Aufgabe 127-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 127
+
+Wie groß ist die schraffierte Fläche A?  </strong>   
+
+<img src="Aufgabe127.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe127.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 128-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 128
+
+Wie groß ist die rot umrandete Fläche A?  </strong> 
+
+<img src="Aufgabe128.jpg" align="middle"> A = <input type="text" id="Eintrag128" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe128() { 
+                                                
+                          if (Eintrag128.value=="25,6") {alert("Richtig"); document.getElementById("Pruef128").disabled= true;
+                          }  
+                           
+                          else if (Eintrag128.value!=="25,6" && Eintrag128.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag128").value="25,6"; window.open('Flaeche_Aufgabe128.html');           
+                          document.getElementById("Pruef128").disabled= true;}
+                               
+                          else if (Eintrag128.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 129-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 129
+
+Wie groß ist der Umfang U?  </strong>   
+
+<img src="Aufgabe129.jpg" align="middle">  <button  onclick="window.open('Flaeche_Aufgabe129.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 130-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 130
+
+Wie groß sind s und die Fläche A des Bauteils?    </strong> 
+
+<img src="Aufgabe130.jpg" > 
+
+A = <input type="text" id="Eintrag130" maxlength="6" size="2" style= background-color:yellow ></input> mm² <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe130() { 
+                                                
+                          if (Eintrag130.value=="1120,2") {alert("Richtig"); document.getElementById("Pruef130").disabled= true;
+                          }  
+                           
+                          else if (Eintrag130.value!=="1120,2" && Eintrag130.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag130").value="1120,2"; window.open('Flaeche_Aufgabe130.html');           
+                          document.getElementById("Pruef130").disabled= true;}
+                               
+                          else if (Eintrag130.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 131-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 131
+
+Wie groß sind der Winkel α und die Bögen b<sub>1</sub> und b<sub>2</sub>?  </strong>   
+
+<img src="Aufgabe131.jpg" align="middle">  <button  onclick="window.open('Flaeche_Aufgabe131.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 132-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 132
+
+Wie groß ist die schraffierte Fläche A? </strong> 
+
+<img src="Aufgabe132.jpg" align="middle"> A = <input type="text" id="Eintrag132" maxlength="5" size="2" style= background-color:yellow ></input> mm² <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe132() { 
+                                                
+                          if (Eintrag132.value=="291,8") {alert("Richtig"); document.getElementById("Pruef132").disabled= true;
+                          }  
+                           
+                          else if (Eintrag132.value!=="291,8" && Eintrag132.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag132").value="291,8"; window.open('Flaeche_Aufgabe132.html');           
+                          document.getElementById("Pruef132").disabled= true;}
+                               
+                          else if (Eintrag132.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 133-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 133
+
+Wie groß ist die schraffierte Fläche A? </strong> 
+
+ <img src="Aufgabe133.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe133.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 134-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 134
+
+Wie groß ist der Radius r der kleinen Kreise? </strong> 
+
+<img src="Aufgabe134.jpg" align="middle"> r = <input type="text" id="Eintrag134" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe134() { 
+                                                
+                          if (Eintrag134.value=="0,9") {alert("Richtig"); document.getElementById("Pruef134").disabled= true;
+                          }  
+                           
+                          else if (Eintrag134.value!=="0,9" && Eintrag134.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag134").value="0,9"; window.open('Flaeche_Aufgabe134.html');           
+                          document.getElementById("Pruef134").disabled= true;}
+                               
+                          else if (Eintrag134.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 135-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 135
+
+Wie groß ist der Radius r der kleinen Kreise? </strong>   
+
+<img src="Aufgabe135.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe135.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 136-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 136
+
+Wie groß ist der Radius r?  </strong> 
+
+<img src="Aufgabe136.jpg" align="middle"> r = <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe136() { 
+                                                
+                          if (Eintrag136.value=="16,4") {alert("Richtig"); document.getElementById("Pruef136").disabled= true;
+                          }  
+                           
+                          else if (Eintrag136.value!=="16,4" && Eintrag136.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag136").value="16,4"; window.open('Flaeche_Aufgabe136.html');           
+                          document.getElementById("Pruef136").disabled= true;}
+                               
+                          else if (Eintrag136.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 137-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 137
+
+Wie groß ist der Radius r?  </strong>   
+
+<img src="Aufgabe137.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe137.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 138-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 138
+
+Ein rechtwinkliges Dreieck hat die Fläche A = 80 cm². 
+Eine Kathete verhält sich zur Hypotenuse wie 3 : 5. 
+Wie lang sind die Dreieckseiten?</strong> 
+
+Hypotenuse = <input type="text" id="Eintrag138" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe138() { 
+                                                
+                          if (Eintrag138.value=="18,3") {alert("Richtig"); document.getElementById("Pruef138").disabled= true;
+                          }  
+                           
+                          else if (Eintrag138.value!=="18,3" && Eintrag138.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag138").value="18,3"; window.open('Flaeche_Aufgabe138.html');           
+                          document.getElementById("Pruef138").disabled= true;}
+                               
+                          else if (Eintrag138.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 139-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 139
+
+Wie groß ist der Abfall in Prozent, wenn bei einem Rechteck 
+(140 mm * 200 mm) die Ecken mit einem Radius von 20 mm 
+abgerundet werden?  </strong>  <button  onclick="window.open('Flaeche_Aufgabe139.html');" >Lösung</button></p></pre>   
+
+
+          <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Flaeche6.html');">zurück...</button>    
+	        <button type="button" class ="Aufgabe" onclick="window.open('Flaeche7.html'); window.close('Flaeche6.html');">mehr...</button>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    

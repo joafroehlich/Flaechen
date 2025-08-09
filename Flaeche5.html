@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de"><!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color: #B9D1EA;">
+
+    <style> 
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Flächenberechnungen</p>    
+        
+                    
+<!--//Aufgabe 98-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 98
+
+Einem Kreis mit dem Radius 12 cm ist ein regelmäßiges 
+Achteck einbeschrieben. Wie groß sind dessen Seiten, 
+Fläche und Radius des einbeschriebenen Kreises?</strong>
+
+Seite = <input type="text" id="Eintrag98" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef98" onclick="Aufgabe98()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe98() { 
+                                                
+                          if (Eintrag98.value=="9,2") {alert("Richtig"); document.getElementById("Pruef98").disabled= true;
+                          }  
+                           
+                          else if (Eintrag98.value!=="9,2" && Eintrag98.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag98").value="9,2"; window.open('Flaeche_Aufgabe98.html');           
+                          document.getElementById("Pruef98").disabled= true;}
+                               
+                          else if (Eintrag98.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 99-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 99
+
+Einem Kreis ist ein gleichseitiges Dreieck mit Seiten von  
+4 cm Länge einbeschrieben. Wie groß sind die Seiten eines 
+im gleichen Kreis liegenden Sechsecks? </strong>   <button  onclick="window.open('Flaeche_Aufgabe99.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 100-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 100
+
+Ein Quadrat mit einer Seitenlänge von 10 cm ist einem 
+regelmäßigen Sechseck flächengleich. 
+Wie lang ist eine Sechseckseite?  </strong>
+
+Sie ist <input type="text" id="Eintrag100" maxlength="3" size="1" style= background-color:yellow ></input> cm lang. <button id="Pruef100" onclick="Aufgabe100()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe100() { 
+                                                
+                          if (Eintrag100.value=="6,2") {alert("Richtig"); document.getElementById("Pruef100").disabled= true;
+                          }  
+                           
+                          else if (Eintrag100.value!=="6,2" && Eintrag100.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag100").value="6,2"; window.open('Flaeche_Aufgabe100.html');           
+                          document.getElementById("Pruef100").disabled= true;}
+                               
+                          else if (Eintrag100.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 101-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 101
+
+Wie lang ist die Seite b des einbeschriebenen Quadrates? </strong>   
+
+<img src="Aufgabe101.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe101.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 102-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 102
+
+Wie lang ist die Seite b des einbeschriebenen Quadrates?</strong>   
+
+<img src="Aufgabe102.jpg" align="middle"> b = <input type="text" id="Eintrag102" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef102" onclick="Aufgabe102()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe102() { 
+                                                
+                          if (Eintrag102.value=="1.3") {alert("Richtig"); document.getElementById("Pruef102").disabled= true;
+                          }  
+                           
+                          else if (Eintrag102.value!=="1,3" && Eintrag102.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag102").value="1,3"; window.open('Flaeche_Aufgabe102.html');           
+                          document.getElementById("Pruef102").disabled= true;}
+                               
+                          else if (Eintrag102.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+                      
+<!--//Aufgabe 103-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 103
+
+Wie lang sind die Grundseite b, ein Schenkel s und die 
+Fläche A des einbeschriebenen Dreiecks?  </strong>   
+
+<img src="Aufgabe103.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe103.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 104-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 104
+
+Ein regelmäßiges Sechseck mit einer Seitenlänge von 2 cm 
+hat den gleichen Umfang wie ein regelmäßiges Achteck. 
+Wie groß sind die Achteckseite s und die Flächen von 
+Sechseck und Achteck? </strong>
+
+A8 = <input type="text" id="Eintrag104" maxlength="4" size="1" style= background-color:yellow ></input> cm² <button id="Pruef104" onclick="Aufgabe104()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe104() { 
+                                                
+                          if (Eintrag104.value=="11,1") {alert("Richtig"); document.getElementById("Pruef104").disabled= true;
+                          }  
+                           
+                          else if (Eintrag104.value!=="11,1" && Eintrag104.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag104").value="11,1"; window.open('Flaeche_Aufgabe104.html');           
+                          document.getElementById("Pruef104").disabled= true;}
+                               
+                          else if (Eintrag104.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 105-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 105
+
+Wie groß ist die schraffierte Fläche?  </strong>   
+
+<img src="Aufgabe105.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe105.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 106-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 106
+
+Ein regelmäßiges Fünfeck hat einen Umfang von 15 cm. 
+Wie groß sind eine Fünfeckseite a, die Fläche A und 
+der Umkreisradius r? ?</strong>   
+
+a = <input type="text" id="Eintrag106" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef106" onclick="Aufgabe106()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe106() { 
+                                                
+                          if (Eintrag106.value=="3") {alert("Richtig"); document.getElementById("Pruef106").disabled= true;
+                          }  
+                           
+                          else if (Eintrag106.value!=="3" && Eintrag106.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag106").value="3"; window.open('Flaeche_Aufgabe106.html');           
+                          document.getElementById("Pruef106").disabled= true;}
+                               
+                          else if (Eintrag106.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+<!--//Aufgabe 107-->                     
+                      
+    <pre><p class="Aufgabe"><strong>Aufgabe 107
+
+Wie groß sind die Fläche A, der Umfang U und die 
+Diagonale e des Drachens? </strong>   
+
+<img src="Aufgabe107.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe107.html');" >Lösung</button></p></pre>   
+
+<!--//Aufgabe 108-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 108
+
+Wie groß ist der Umkreisradius r des Drachens, wenn e die 
+Diagonale f im Verhältnis 4 : 3 teilt? </strong>   
+
+<img src="Aufgabe108.jpg" align="middle"> r = <input type="text" id="Eintrag108" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef108" onclick="Aufgabe108()">Prüfen</button></p></pre> 
+    
+ 
+                      <script>
+                        function Aufgabe108() { 
+                                                
+                          if (Eintrag108.value=="4,3") {alert("Richtig"); document.getElementById("Pruef108").disabled= true;
+                          }  
+                           
+                          else if (Eintrag108.value!=="4,3" && Eintrag108.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag108").value="4,3"; window.open('Flaeche_Aufgabe108.html');           
+                          document.getElementById("Pruef108").disabled= true;}
+                               
+                          else if (Eintrag108.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+
+
+          <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Flaeche5.html');">zurück...</button>    
+	        <button type="button" class ="Aufgabe" onclick="window.open('Flaeche6.html'); window.close('Flaeche5.html');">mehr...</button>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
