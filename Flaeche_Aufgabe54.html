@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flächenberechnungen</title>
+  
+</head>
+<body style="background-color:white;; margin-top: 1em; ">
+       
+
+    <style>
+               
+        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        
+    </style>
+    
+<pre><p class ="Aufgabe">Flächenberechnungen Aufgabe 54
+
+Ein gleichschenkliges Dreieck hat eine Fläche von 8 cm² 
+und einen Schenkel von 5 cm. 
+Wie groß ist sein Inkreisradius? 
+
+<img src="Aufgabe54.jpg" >
+
+     c * h   
+A = ------- |*2 
+       2   
+ 
+A * 2 = c * h |:c 
+ 
+ 2 * A 
+------- = h 
+   c 
+ 
+     2 * 8     16  
+h = ------- = ---- 
+       c        c 
+ 
+Satz von Pythagoras im Dreieck ADC: 
+ 
+            c        
+a² = h² + (---)² 
+            2   
+ 
+       16       c²     
+5² = (----)² + ----  
+        c        4   
+ 
+      256     c² 
+25 = ----- + ---- |*4c² 
+       c²     4  
+ 
+ 
+100c² = 1024 + c<sup>4</sup> |-100c² 
+ 
+c<sup>4</sup> - 100c² + 1024 = 0 
+ 
+Setze c² = z 
+ 
+z² - 100z + 1024 = 0 
+ 
+p,q - Formel: 
+ 
+p = -100 ; q = 1024 
+
+<img src="Aufgabe54a.jpg" >
+<img src="Aufgabe54b.jpg" >
+ 
+z<sub>1</sub> = 50 + 38,4 = 88,4   
+ 
+z<sub>2</sub> = 50 - 38,4 = 11,6  
+ 
+Rücksubstituiert: 
+ 
+z<sub>1</sub> = c<sub>1,2</sub><sup>2</sup>   
+ 
+c<sub>1,2</sub> = √88,4 = ± 9,9 
+ 
+c<sub>1</sub> = 9,9 cm 
+ 
+c<sub>2</sub> = - 9,9 keine Lösung, negative Länge 
+ 
+z<sub>2</sub>2 = c<sub>3,4</sub><sup>2</sup> 
+ 
+c<sub>3,4</sub> = √11,6 = ± 3,4 
+ 
+c<sub>3</sub> = 3,4 cm 
+ 
+c<sub>4</sub> = -3,4 keine Lösung, negative Länge 
+
+<img src="Aufgabe54c.jpg" >
+
+Das Dreieck ABC besteht aus 3 Teildreiecken ABM, BCM und AMC. 
+ 
+                  c * r<sub>i</sub> 
+Fläche von ABM = -------- 
+                    2     
+ 
+                  a * r<sub>i</sub> 
+Fläche von BCM = -------- 
+                    2     
+ 
+                  b * r<sub>i</sub> 
+Fläche von AMC = -------- 
+                    2     
+ 
+                            c * r<sub>i</sub>     a * r<sub>i</sub>     b * r<sub>i</sub>    
+Fläche A von Dreieck ABC = -------- + -------- + -------- 
+                               2          2         2 
+ 
+Umfang U des Dreiecks = a + b + c 
+ 
+     U    
+s = --- 
+     2 
+
+     r<sub>i</sub>                   U     
+A = ---- *( a + b + c) = --- * r<sub>i</sub> = s * r<sub>i</sub> 
+      2                   2   
+
+A = s * r<sub>i</sub> |:s 
+
+      A    
+r<sub>i</sub> = --- 
+      s   
+
+      U     2 * 5 cm + 9,9 cm  
+s<sub>1</sub> = --- = -------------------- = 9,95 cm 
+      2             2 
+
+      2 * 5 cm + 3,4 cm   
+s<sub>2</sub> = -------------------- = 6,7 cm                   
+               2 
+
+        8 cm²    
+<span style="color:red;">r<sub>i1</sub></span> = ---------- <span style="color:red;">= 0,8 cm</span> 
+       9,95 cm    
+
+        8 cm²  
+<span style="color:red;">r<sub>i2</sub></span> = --------- <span style="color:red;">= 1,2 cm</span> 
+       6,7 cm 
+ 
+
+</p></pre>
