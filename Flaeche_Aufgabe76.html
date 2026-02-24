@@ -12,18 +12,20 @@
 
     <style>
                
-        .Aufgabe { font-size: 1em;  font-family: monospace, monospace;margin:0.5em;}
+        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;margin:0.5em;}
         
     </style>
     
-<pre><p class ="Aufgabe">Flächenberechnungen Aufgabe 76
+<pre><b><p class ="Aufgabe">Aufgabe 76
 
-Berechnen Sie die Länge der Seiten des einbeschriebenen Rechtecks.  
-Die Flächen des Quadrates und des Rechtecks verhalten sich wie 3 : 1. 
+Berechnen Sie die Länge der Seiten des 
+einbeschriebenen Rechtecks.  
+Die Flächen des Quadrates und des Rechtecks 
+verhalten sich wie 3 : 1. 
 
 <img src="Aufgabe76a.jpg" >
 
-AQuadrat = 8 cm * 8 cm = 64 cm² 
+A<sub>Quadrat</sub> = 8 cm * 8 cm = 64 cm<sup>2</sup> 
  
   A<sub>Quadrat</sub>     3 
 ----------- = --- | * A<sub>Rechteck</sub> 
@@ -36,16 +38,16 @@ A<sub>Rechteck</sub> = ----------
                 3   
  
              64                
-A<sub>Rechteck</sub> = ---- = 21,3 cm² 
+A<sub>Rechteck</sub> = ---- = 21,3 cm<sup>2</sup> 
              3    
  
 Satz von Pythagoras im Dreieck ABC: 
  
-d² = 8² + 8² 
+d<sup>2</sup> = 8<sup>2</sup> + 8<sup>2</sup> 
  
-d² = 64 + 64  
+d<sup>2</sup> = 64 + 64  
  
-d² = 128 |√ 
+d<sup>2</sup> = 128 |√ 
  
 d = 11,3 cm 
  
@@ -58,18 +60,69 @@ h = -------
        2 
                     b * (11,3 - a)    
                   ----------------- 
-      b * h<sub>1</sub>              2             11,3 * b - a * b  
-A<sub>1</sub> = --------- = ------------------ =  ------------------              
-        2                 2                     4 
+      b * h<sub>1</sub>              2               
+A<sub>1</sub> = --------- = ------------------ =                
+        2                 2     
+
+   11,3 * b - a * b     
+= ------------------ 
+          4 
  
                  a * (11,3 - b)    
                ----------------- 
-     a * h             2              11,3 * a - a * b  
-A = ------- = ------------------- =  -------------------              
-       2               2                       4
+     a * h             2                
+A = ------- = ------------------- =                
+       2               2                       
+       
+    11,3 * a - a * b   
+= -------------------       
+           4
+
+     21,3   
+b = -------
+       a   
+
+                  2      
+2 * A<sub>1</sub> + 2 * A = --- * 64  
+                  3  
+
+wegen des Verhältnisses 3 : 1
+
+     b*11,3 - b*a         a*11,3 - a*b     128 
+2 * -------------- + 2 * -------------- = -----
+            4                   4           3
+ 
+b eingesetzt:    
+
+21,3
+----- * 11,3 - 21,3
+  a                     11,3 * a - 21,3     128  
+-------------------- + ----------------- = ----- 
+          2                    2             3 
+
+                                                        
+240,7 - 21,3a      11,3 * a - 21,3     128   
+--------------- + ----------------- = ----- |*2a
+     2 * a                2             3    
+
+                                   256a  
+240,7 - 21,3a + 11,3a<sup>2</sup> - 21,3a = --------
+                                    3
+
+                          256a       
+11,3a<sup>2</sup> - 42,6a + 240,7 = ------- |*3  
+                            3 
+
+33,9a<sup>2</sup> - 127,8a + 722,1 = 256a |-256a
+
+33,9a<sup>2</sup> - 383,8a + 722,1 = 0 |:33,9
+
+a<sup>2</sup> - 11,3a + 21,3 = 0
+
+p = -11,3 ; q = 21,3 
 
 <img src="Aufgabe76b.jpg" > 
-
+                                                   
 a<sub>1,2</sub> = 5,65 ± 3,26 
 
 a<sb>1</sb> = 5,65 + 3,26 = <span style="color:red;">8,9 cm = b</span> 
@@ -77,4 +130,4 @@ a<sb>1</sb> = 5,65 + 3,26 = <span style="color:red;">8,9 cm = b</span>
 <span style="color:red;">a<sub>2</sub></span> = 5,65 - 3,26 <span style="color:red;">= 2,4 cm</span>
        
 
-</p></pre>
+</p></b></pre>
