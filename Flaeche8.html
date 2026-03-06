@@ -300,19 +300,19 @@ Wie hoch ist der Gesamtpreis?
 
 Er beträgt <input type="text" id="Eintrag182" maxlength="6" size="2" style= background-color:yellow ></input> € <button id="Pruef182" onclick="Aufgabe182()">Prüfen</button></p></pre> 
     
- 
-                      <script>
+  <script>
                         function Aufgabe182() { 
                                                 
                           if (Eintrag182.value=="189783") {alert("Richtig"); document.getElementById("Pruef182").disabled= true;
                           }  
                            
-                          else if (Eintrag182.value!=="189783" && Eintrag182.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag182").value="189783; window.open('Flaeche_Aufgabe182.html');"           
+                          else if (Eintrag182.value!=="189783" && Eintrag182.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag182").value="189783"; window.open('Flaeche_Aufgabe182.html');           
                           document.getElementById("Pruef182").disabled= true;}
                                
                           else if (Eintrag182.value=="") {alert("Bitte eine Eingabe machen")}}
                          
                       </script>
+                      
                       
 <!--//Aufgabe 183-->                     
                       
@@ -1383,7 +1383,7 @@ Wie groß ist der Blechabfall A?
 
 <img src="Aufgabe240.jpg" > 
 
-A = <input type="text" id="Eintrag240" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef240" onclick="Aufgabe240()">Prüfen</button></p></pre>  
+A = <input type="text" id="Eintrag240" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef240" onclick="Aufgabe240()">Prüfen</button></p></b></pre>  
 
                       <script>
                         function Aufgabe240() { 
@@ -1399,7 +1399,7 @@ A = <input type="text" id="Eintrag240" maxlength="4" size="1" style= background-
                       </script>
 
 
-          <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('Flaeche8.html');">zurück...</button>    
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>    
 	      
           
         <script>
