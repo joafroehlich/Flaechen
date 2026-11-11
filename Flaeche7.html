@@ -6,19 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flächenberechnungen</title>
-  
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 </head>
 <body style="background-color: white;">
 
-    <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+   <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Flächenberechnungen</p> 
@@ -26,17 +83,17 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
      
-        
+  <div class="check">    
                     
 <!--//Aufgabe 140-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 140
+  <h2>Aufgabe 140</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe140.jpg" > 
+<img src="Aufgabe140.jpg" ></p> 
 
-A = <input type="text" id="Eintrag140" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag140" maxlength="4"  ></input> mm² <button id="Pruef140" onclick="Aufgabe140()">Prüfen</button></p>
     
  
                       <script>
@@ -54,23 +111,23 @@ A = <input type="text" id="Eintrag140" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 141-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 141
+    <h2>Aufgabe 141</h2><p>
 
-Wie groß ist die Fläche A?     
+Wie groß ist die Fläche A?</p>
 
-<img src="Aufgabe141.jpg" > 
+<img src="Aufgabe141.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe141.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe141.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 142-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 142
+  <h2>Aufgabe 142</h2><p>
 
-Wie groß ist die Fläche A?  
+Wie groß ist die Fläche A?</p>  
 
-<img src="Aufgabe142.jpg" > 
+<img src="Aufgabe142.jpg" ></p> 
 
-A = <input type="text" id="Eintrag142" maxlength="3" size="1" style= background-color:yellow ></input> dm² <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag142" maxlength="3" ></input> dm² <button id="Pruef142" onclick="Aufgabe142()">Prüfen</button></p> 
     
  
                       <script>
@@ -88,23 +145,23 @@ A = <input type="text" id="Eintrag142" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 143-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 143
+    <h2>Aufgabe 142</h2><p>
 
-Wie groß ist die Fläche A?      
+Wie groß ist die Fläche A?</p>      
 
-<img src="Aufgabe143.jpg" > 
+<img src="Aufgabe143.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe143.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe143.html');" >Lösung</button></p>
 
 <!--//Aufgabe 144-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 144
+  <h2>Aufgabe 144</h2><p>
 
-Wie groß ist die Fläche A?  
+Wie groß ist die Fläche A?</p>  
 
-<img src="Aufgabe144.jpg" > 
+<img src="Aufgabe144.jpg" ></p> 
 
-A = <input type="text" id="Eintrag144" maxlength="3" size="1" style= background-color:yellow ></input> m² <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag144" maxlength="3"  ></input> m² <button id="Pruef144" onclick="Aufgabe144()">Prüfen</button></p>
     
  
                       <script>
@@ -122,23 +179,23 @@ A = <input type="text" id="Eintrag144" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 145-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 145
+    <h2>Aufgabe 145</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe145.jpg" > 
+<img src="Aufgabe145.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe145.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe145.html');" >Lösung</button></p>
 
 <!--//Aufgabe 146-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 146
+  <h2>Aufgabe 146</h2><p>
 
-Wie groß ist die Fläche A?    
+Wie groß ist die Fläche A?</p>    
 
-<img src="Aufgabe146.jpg" > 
+<img src="Aufgabe146.jpg" ></p> 
 
-A = <input type="text" id="Eintrag146" maxlength="4" size="1" style= background-color:yellow ></input> m² <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag146" maxlength="4" size="1" style= background-color:yellow ></input> m² <button id="Pruef146" onclick="Aufgabe146()">Prüfen</button></p>
     
  
                       <script>
@@ -156,23 +213,23 @@ A = <input type="text" id="Eintrag146" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 147-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 147
+    <h2>Aufgabe 147</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe147.jpg" > 
+<img src="Aufgabe147.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe147.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe147.html');" >Lösung</button></p>
 
 <!--//Aufgabe 148-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 148
+  <h2>Aufgabe 148</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe148.jpg" > 
+<img src="Aufgabe148.jpg" ></p> 
 
-A = <input type="text" id="Eintrag148" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag148" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef148" onclick="Aufgabe148()">Prüfen</button></p>
     
  
                       <script>
@@ -191,23 +248,23 @@ A = <input type="text" id="Eintrag148" maxlength="4" size="1" style= background-
 
 <!--//Aufgabe 149-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 149
+    <h2>Aufgabe 149</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe149.jpg" > 
+<img src="Aufgabe149.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe149.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe149.html');" >Lösung</button></p>
 
 <!--//Aufgabe 150-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 150
+  <h2>Aufgabe 150</h2><p>
 
-Wie groß ist die Fläche A?  
+Wie groß ist die Fläche A?</p>  
 
-<img src="Aufgabe150.jpg" > 
+<img src="Aufgabe150.jpg" ></p> 
 
-A = <input type="text" id="Eintrag150" maxlength="5" size="2" style= background-color:yellow ></input> mm² <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag150" maxlength="5" size="2" style= background-color:yellow ></input> mm² <button id="Pruef150" onclick="Aufgabe150()">Prüfen</button></p>
     
  
                       <script>
@@ -225,23 +282,23 @@ A = <input type="text" id="Eintrag150" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 151-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 151
+    <h2>Aufgabe 151</h2><p>
 
-Wie groß ist die Fläche A?     
+Wie groß ist die Fläche A?</p>     
 
-<img src="Aufgabe151.jpg" > 
+<img src="Aufgabe151.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe151.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe151.html');" >Lösung</button></p>
 
 <!--//Aufgabe 152-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 152
+  <h2>Aufgabe 152</h2><p>
 
-Wie groß ist die Fläche A? 
+Wie groß ist die Fläche A?</p> 
 
-<img src="Aufgabe152.jpg" > 
+<img src="Aufgabe152.jpg" ></p> 
 
-A = <input type="text" id="Eintrag152" maxlength="5" size="2" style= background-color:yellow ></input> mm² <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag152" maxlength="5" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef152" onclick="Aufgabe152()">Prüfen</button></p>
     
  
                       <script>
@@ -259,23 +316,23 @@ A = <input type="text" id="Eintrag152" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 153-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 153
+    <h2>Aufgabe 153</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe153.jpg" > 
+<img src="Aufgabe153.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe153.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe153.html');" >Lösung</button></p>
 
 <!--//Aufgabe 154-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 154
+  <h2>Aufgabe 154</h2><p>
 
-Wie groß ist die schraffierte Fläche A?   
+Wie groß ist die schraffierte Fläche A?</p>   
 
-<img src="Aufgabe154.jpg" > 
+<img src="Aufgabe154.jpg" ></p> 
 
-A = <input type="text" id="Eintrag154" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag154" maxlength="4"  ></input> mm² <button id="Pruef154" onclick="Aufgabe154()">Prüfen</button></p>
     
  
                       <script>
@@ -293,23 +350,23 @@ A = <input type="text" id="Eintrag154" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 155-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 155
+    <h2>Aufgabe 155</h2><p>
 
-Wie groß ist die schraffierte Fläche A? 
+Wie groß ist die schraffierte Fläche A?</p> 
 
-<img src="Aufgabe155.jpg" >
+<img src="Aufgabe155.jpg" ></p>
 
-<button  onclick="window.open('Flaeche_Aufgabe155.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe155.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 156-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 156
+  <h2>Aufgabe 156</h2><p>
 
-Wie groß ist die Fläche A?  
+Wie groß ist die Fläche A?</p>  
 
-<img src="Aufgabe156.jpg" > 
+<img src="Aufgabe156.jpg" ></p> 
 
-A = <input type="text" id="Eintrag156" maxlength="4" size="1" style= background-color:yellow ></input> mm² <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag156" maxlength="4" ></input> mm² <button id="Pruef156" onclick="Aufgabe156()">Prüfen</button></p>
     
  
                       <script>
@@ -327,25 +384,25 @@ A = <input type="text" id="Eintrag156" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 157-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 157
+    <h2>Aufgabe 157</h2><p>
 
-Wie groß ist die schraffierte Fläche A?
+Wie groß ist die schraffierte Fläche A?</p>
 
-<img src="Aufgabe157.jpg" >
+<img src="Aufgabe157.jpg"> </p>
 
-<button  onclick="window.open('Flaeche_Aufgabe157.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe157.html');" >Lösung</button></p>
 
 <!--//Aufgabe 158-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 158
+  <h2>Aufgabe 158</h2><p>
 
 Ein landwirtschaftlicher Betrieb bietet 
 Ackerflächen an.
-Wie groß ist die Gesamtfläche A in m²?  
+Wie groß ist die Gesamtfläche A in m<sup>2</sup>?</p>  
 
-<img src="Aufgabe158.jpg" > 
+<img src="Aufgabe158.jpg" ></p>
 
-A = <input type="text" id="Eintrag158" maxlength="5" size="2" style= background-color:yellow ></input> m² <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag158" maxlength="5" ></input> m<sup>2</sup> <button id="Pruef158" onclick="Aufgabe158()">Prüfen</button></p>
     
  
                       <script>
@@ -363,23 +420,23 @@ A = <input type="text" id="Eintrag158" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 159-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 159
+    <h2>Aufgabe 159</h2><p>
 
-Wie groß ist die schraffierte Fläche A?
+Wie groß ist die schraffierte Fläche A?</p>
 
-<img src="Aufgabe159.jpg" >   
+<img src="Aufgabe159.jpg" ></p>   
 
-<button  onclick="window.open('Flaeche_Aufgabe159.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe159.html');" >Lösung</button></p>
 
 <!--//Aufgabe 160-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 160
+  <h2>Aufgabe 160</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe160.jpg" >
+<img src="Aufgabe160.jpg" ></p>
 
-A = <input type="text" id="Eintrag160" maxlength="3" size="1" style= background-color:yellow ></input> mm² <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag160" maxlength="3" size="1" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef160" onclick="Aufgabe160()">Prüfen</button></p>
     
  
                       <script>
@@ -397,32 +454,32 @@ A = <input type="text" id="Eintrag160" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 161-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 161
+    <h2>Aufgabe 161</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe161.jpg" > 
+<img src="Aufgabe161.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe161.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe161.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 162-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 162
+  <h2>Aufgabe 162</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe162.jpg" > 
+<img src="Aufgabe162.jpg" ></p> 
 
-A = <input type="text" id="Eintrag162" maxlength="2" size="1" style= background-color:yellow ></input> m³ <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag162" maxlength="2" size="1" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef162" onclick="Aufgabe162()">Prüfen</button></p>
     
  
                       <script>
                         function Aufgabe162() { 
                                                 
-                          if (Eintrag162.value=="14") {alert("Richtig"); document.getElementById("Pruef162").disabled= true;
+                          if (Eintrag162.value=="12") {alert("Richtig"); document.getElementById("Pruef162").disabled= true;
                           }  
                            
-                          else if (Eintrag162.value!=="14" && Eintrag162.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag162").value="14"; window.open('Flaeche_Aufgabe162.html');           
+                          else if (Eintrag162.value!=="12" && Eintrag162.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag162").value="12"; window.open('Flaeche_Aufgabe162.html');           
                           document.getElementById("Pruef162").disabled= true;}
                                
                           else if (Eintrag162.value=="") {alert("Bitte eine Eingabe machen")}}
@@ -431,23 +488,23 @@ A = <input type="text" id="Eintrag162" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 163-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 163
+    <h2>Aufgabe 163</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe163.jpg" >
+<img src="Aufgabe163.jpg" ></p>
 
-<button  onclick="window.open('Flaeche_Aufgabe163.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe163.html');" >Lösung</button></p>
 
 <!--//Aufgabe 164-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 164
+  <h2>Aufgabe 164</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe164.jpg" > 
+<img src="Aufgabe164.jpg" ></p> 
 
-A = <input type="text" id="Eintrag164" maxlength="6" size="2" style= background-color:yellow ></input> mm² <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag164" maxlength="6" ></input> mm² <button id="Pruef164" onclick="Aufgabe164()">Prüfen</button></p>
     
  
                       <script>
@@ -465,23 +522,23 @@ A = <input type="text" id="Eintrag164" maxlength="6" size="2" style= background-
                       
 <!--//Aufgabe 165-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 165
+    <h2>Aufgabe 165</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe165.jpg" > 
+<img src="Aufgabe165.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe165.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe165.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 166-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 166
+  <h2>Aufgabe 166</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe166.jpg" >
+<img src="Aufgabe166.jpg" ></p>
 
-A = <input type="text" id="Eintrag166" maxlength="6" size="2" style= background-color:yellow ></input> mm² <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag166" maxlength="6"  ></input> mm<sup>2</sup> <button id="Pruef166" onclick="Aufgabe166()">Prüfen</button></p>
     
  
                       <script>
@@ -499,18 +556,18 @@ A = <input type="text" id="Eintrag166" maxlength="6" size="2" style= background-
                       
 <!--//Aufgabe 167-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 167
+    <h2>Aufgabe 167</h2><p>
 
-Wie groß ist die Fläche A?   
+Wie groß ist die Fläche A?</p>   
 
-<img src="Aufgabe167.jpg" > 
+<img src="Aufgabe167.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe167.html');" >Lösung</button></p></b></pre>  
+<button  onclick="window.open('Flaeche_Aufgabe167.html');" >Lösung</button></p>
                       
 
 
 
-          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>   
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>   
 	      
           
         <script>

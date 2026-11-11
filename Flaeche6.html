@@ -6,19 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flächenberechnungen</title>
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
   
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+
+        img {
+               max-width: 100%;
+               height: auto;
+               display: block;
+            }    
+        
     </style>
+
+    <main>>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Flächenberechnungen</p>  
@@ -26,25 +83,25 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
      
-        
+<div class="check">        
                     
 <!--//Aufgabe 109-->                     
                       
-    <pre><b><p class="Aufgabe">Aufgabe 109
+    <h2>Aufgabe 109</h2><p>
 
 Wie groß ist der Durchmesser d eines Kreises mit 
-einer Fläche von 30 cm<sup>2</sup>?     
+einer Fläche von 30 cm<sup>2</sup>?</p>     
 
-<button  onclick="window.open('Flaeche_Aufgabe109.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe109.html');" >Lösung</button></p>
 
 <!--//Aufgabe 110-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 110
+  <h2>Aufgabe 110</h2><p>
 
 Wie groß ist der Umfang U eines Kreises mit einer 
-Fläche von 8 cm<sup>2</sup>?    
+Fläche von 8 cm<sup>2</sup>?</p>
 
-U = <input type="text" id="Eintrag110" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p></pre> 
+U = <input type="text" id="Eintrag110" maxlength="2"  ></input> cm <button id="Pruef110" onclick="Aufgabe110()">Prüfen</button></p>
     
  
                       <script>
@@ -62,23 +119,23 @@ U = <input type="text" id="Eintrag110" maxlength="2" size="1" style= background-
                       
 <!--//Aufgabe 111-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 111
+    <h2>Aufgabe 111</h2><p>
 
-Wie groß ist die schraffierte Fläche?   
+Wie groß ist die schraffierte Fläche?</p>   
 
-<img src="Aufgabe111.jpg" > 
+<img src="Aufgabe111.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe111.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe111.html');" >Lösung</button></p>
 
 <!--//Aufgabe 112-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 112
+  <h2>Aufgabe 112</h2><p>
 
-Wie groß ist die schraffierte Fläche?   
+Wie groß ist die schraffierte Fläche?</p>   
 
-<img src="Aufgabe112.jpg" > 
+<img src="Aufgabe112.jpg" ></p> 
 
-Sie ist <input type="text" id="Eintrag112" maxlength="4" size="1" style= background-color:yellow ></input> cm<sup>2</sup> groß. <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p></pre> 
+Sie ist <input type="text" id="Eintrag112" maxlength="4"  ></input> cm<sup>2</sup> groß. <button id="Pruef112" onclick="Aufgabe112()">Prüfen</button></p>
     
  
                       <script>
@@ -96,24 +153,24 @@ Sie ist <input type="text" id="Eintrag112" maxlength="4" size="1" style= backgro
                       
 <!--//Aufgabe 113-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 113
+    <h2>Aufgabe 113</h2><p>
 
 AB ist durch T stetig geteilt. In welchem 
-Verhältnis stehen A<sub>1</sub>, A<sub>2</sub> und A<sub>3</sub> zueinander?
+Verhältnis stehen A<sub>1</sub>, A<sub>2</sub> und A<sub>3</sub> zueinander?</p>
 
-<img src="Aufgabe113.jpg" > 
+<img src="Aufgabe113.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe113.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe113.html');" >Lösung</button></p>
 
 <!--//Aufgabe 114-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 114
+  <h2>Aufgabe 114</h2><p>
 
 Ein Kreisring hat einen inneren Radius von 5 cm 
-und eine Fläche von 12 cm<sup>2</sup>? 
-Wie groß ist der äußere Radius r<sub>a</sub>?    
+und eine Fläche von <br class="br-desk">12 cm<sup>2</sup>? 
+Wie groß ist der äußere Radius r<sub>a</sub>?</p>    
 
-r<sub>a</sub> = <input type="text" id="Eintrag114" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p></pre> 
+r<sub>a</sub> = <input type="text" id="Eintrag114" maxlength="3"  ></input> cm <button id="Pruef114" onclick="Aufgabe114()">Prüfen</button></p>
     
  
                       <script>
@@ -131,23 +188,23 @@ r<sub>a</sub> = <input type="text" id="Eintrag114" maxlength="3" size="1" style=
                       
 <!--//Aufgabe 115-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 115
+    <h2>Aufgabe 115</h2><p>
 
 Ein Kreisring hat eine Fläche von 40 cm<sup>2</sup>. 
 Die Summe seiner Radien ergibt 20 cm. 
-Wie groß ist der Innenradius r<sub>i</sub>?  
+Wie groß ist der Innenradius r<sub>i</sub>?</p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe115.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe115.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 116-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 116
+  <h2>Aufgabe 116</h2><p>
 
 Ein Kreisring hat einen Außenradius von 12 cm. 
 Er soll die gleiche Fläche wie sein Innenkreis 
-haben. Wie groß ist der Innenradius r<sub>i</sub>?  
+haben. Wie groß ist der Innenradius r<sub>i</sub>?</p>  
 
-r<sub>i</sub> = <input type="text" id="Eintrag116" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p></pre> 
+r<sub>i</sub> = <input type="text" id="Eintrag116" maxlength="3"  ></input> cm <button id="Pruef116" onclick="Aufgabe116()">Prüfen</button></p>
     
  
                       <script>
@@ -165,26 +222,26 @@ r<sub>i</sub> = <input type="text" id="Eintrag116" maxlength="3" size="1" style=
                       
 <!--//Aufgabe 117-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 117
+    <h2>Aufgabe 117</h2><p>
 
 Die Seite eines gleichseitigen Dreiecks von 6 cm 
 sei gleich dem Außenradius eines Kreisrings, 
 seine Höhe gleich dem Innenradius. In welchem 
 Verhältnis steht die Fläche des Kreisrings zur 
-Fläche des Innenkreises?   
+Fläche des Innenkreises?</p>   
 
-<button  onclick="window.open('Flaeche_Aufgabe117.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe117.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 118-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 118
+  <h2>Aufgabe 118</h2><p>
 
 Ein rechteckiges Bauteil mit einer Länge von 
-24 cm und einer Breite von 15 cm soll durch ein 
+24 cm und einer Breite von <br class="br-desk">15 cm soll durch ein 
 kreisrundes ersetzt werden. 
-Wie groß muss dessen Durchmesser d sein?  
+Wie groß muss dessen Durchmesser d sein?</p>  
 
-d = <input type="text" id="Eintrag118" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag118" maxlength="4" ></input> cm <button id="Pruef118" onclick="Aufgabe118()">Prüfen</button></p>
     
  
                       <script>
@@ -202,24 +259,24 @@ d = <input type="text" id="Eintrag118" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 119-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 119
+    <h2>Aufgabe 119</h2><p>
 
 Wie groß sind der Mittelpunktswinkel α und die 
-Fläche A? 
+Fläche A?</p> 
 
-<img src="Aufgabe119.jpg" > 
+<img src="Aufgabe119.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe119.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe119.html');" >Lösung</button></p>
 
 <!--//Aufgabe 120-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 120
+  <h2>Aufgabe 120</h2><p>
 
-Wie groß ist die schraffierte Fläche A?   
+Wie groß ist die schraffierte Fläche A?</p>   
 
-<img src="Aufgabe120.jpg" > 
+<img src="Aufgabe120.jpg" ></p> 
 
-A = <input type="text" id="Eintrag120" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag120" maxlength="3" ></input> cm<sup>2</sup> <button id="Pruef120" onclick="Aufgabe120()">Prüfen</button></p>
     
  
                       <script>
@@ -237,25 +294,25 @@ A = <input type="text" id="Eintrag120" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 121-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 121
+    <h2>Aufgabe 121</h2><p>
 
-Wie groß ist die schraffierte Fläche A?   
+Wie groß ist die schraffierte Fläche A?</p>  
 
-<img src="Aufgabe121.jpg" > 
+<img src="Aufgabe121.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe121.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe121.html');" >Lösung</button></p>
 
 <!--//Aufgabe 122-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 122
+  <h2>Aufgabe 122</h2><p>
 
 Der Bogen b eines Kreissektors sei gleich dem 
 Radius r = 4 cm des Kreises. 
 Wie groß sind die Sektorfläche A und der 
 Radius r<sub>1</sub> eines Kreises, der dem 
-Sektor flächengleich ist?   
+Sektor flächengleich ist?</p>   
 
-A = <input type="text" id="Eintrag122" maxlength="1" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag122" maxlength="1" ></input> cm<sup>2</sup> <button id="Pruef122" onclick="Aufgabe122()">Prüfen</button></p>
     
  
                       <script>
@@ -273,24 +330,24 @@ A = <input type="text" id="Eintrag122" maxlength="1" size="1" style= background-
                       
 <!--//Aufgabe 123-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 123
+    <h2>Aufgabe 123</h2><p>
 
-Wie groß ist die schraffierte Fläche A?     
+Wie groß ist die schraffierte Fläche A?</p>     
 
-<img src="Aufgabe123.jpg" > 
+<img src="Aufgabe123.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe123.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe123.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 124-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 124
+  <h2>Aufgabe 124</h2><p>
 
 Sektor und Segment eines Kreises seien 
 flächengleich. Wie groß muss der Bogen b des 
 Sektors sein, wenn der Bogen b<sub>1</sub> des Segments 5 cm, 
-die Bogenhöhe 1 cm und die Sehne 4 cm betragen?  
+die Bogenhöhe 1 cm und die Sehne 4 cm betragen?</p>  
 
-b = <input type="text" id="Eintrag124" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p></pre> 
+b = <input type="text" id="Eintrag124" maxlength="3" ></input> cm <button id="Pruef124" onclick="Aufgabe124()">Prüfen</button></p>
     
  
                       <script>
@@ -308,23 +365,23 @@ b = <input type="text" id="Eintrag124" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 125-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 125
+    <h2>Aufgabe 125</h2><p>
 
-Wie groß ist die schraffierte Fläche A?    
+Wie groß ist die schraffierte Fläche A?</p>    
 
-<img src="Aufgabe125.jpg" >  
+<img src="Aufgabe125.jpg" ></p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe125.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe125.html');" >Lösung</button></p>
 
 <!--//Aufgabe 126-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 126
+  <h2>Aufgabe 126</h2><p>
 
-Wie groß ist die schraffierte Fläche A?  
+Wie groß ist die schraffierte Fläche A?</p>
 
-<img src="Aufgabe126.jpg" > 
+<img src="Aufgabe126.jpg" ></p> 
 
-A = <input type="text" id="Eintrag126" maxlength="3" size="1" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag126" maxlength="3" ></input> cm<sup>2</sup> <button id="Pruef126" onclick="Aufgabe126()">Prüfen</button></p>
     
  
                       <script>
@@ -342,23 +399,23 @@ A = <input type="text" id="Eintrag126" maxlength="3" size="1" style= background-
                       
  <!--//Aufgabe 127-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 127
+    <h2>Aufgabe 127</h2><p>
 
-Wie groß ist die schraffierte Fläche A?     
+Wie groß ist die schraffierte Fläche A?</p>     
 
-<img src="Aufgabe127.jpg" > 
+<img src="Aufgabe127.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe127.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe127.html');" >Lösung</button></p>
 
 <!--//Aufgabe 128-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 128
+  <h2>Aufgabe 128</h2><p>
 
-Wie groß ist die rot umrandete Fläche A?   
+Wie groß ist die rot umrandete Fläche A?</p>   
 
-<img src="Aufgabe128.jpg" > 
+<img src="Aufgabe128.jpg" ></p> 
 
-A = <input type="text" id="Eintrag128" maxlength="4" size="1" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag128" maxlength="4"  ></input> mm<sup>2</sup> <button id="Pruef128" onclick="Aufgabe128()">Prüfen</button></p> 
     
  
                       <script>
@@ -376,23 +433,23 @@ A = <input type="text" id="Eintrag128" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 129-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 129
+    <h2>Aufgabe 129</h2><p>
 
-Wie groß ist der Umfang U?     
+Wie groß ist der Umfang U?</p>     
 
-<img src="Aufgabe129.jpg" >  
+<img src="Aufgabe129.jpg" ></p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe129.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe129.html');" >Lösung</button></p>
 
 <!--//Aufgabe 130-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 130
+  <h2>Aufgabe 130</h2><p>
 
-Wie groß sind s und die Fläche A des Bauteils?
+Wie groß sind s und die Fläche A des Bauteils?</p>
 
-<img src="Aufgabe130.jpg" > 
+<img src="Aufgabe130.jpg" ></p> 
 
-A = <input type="text" id="Eintrag130" maxlength="6" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag130" maxlength="6" ></input> mm<sup>2</sup> <button id="Pruef130" onclick="Aufgabe130()">Prüfen</button></p>
     
  
                       <script>
@@ -410,23 +467,23 @@ A = <input type="text" id="Eintrag130" maxlength="6" size="2" style= background-
                       
 <!--//Aufgabe 131-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 131
+    <h2>Aufgabe 131</h2><p>
 
-Wie groß sind der Winkel α und die Bögen b<sub>1</sub> und b<sub>2</sub>?
+Wie groß sind der Winkel α und die Bögen b<sub>1</sub> und b<sub>2</sub>?</p>
 
-<img src="Aufgabe131.jpg" >  
+<img src="Aufgabe131.jpg" ></p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe131.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe131.html');" >Lösung</button></p>
 
 <!--//Aufgabe 132-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 132
+  <h2>Aufgabe 132</h2><p>
 
-Wie groß ist die schraffierte Fläche A?  
+Wie groß ist die schraffierte Fläche A?</p>  
 
-<img src="Aufgabe132.jpg" > 
+<img src="Aufgabe132.jpg" ></p> 
 
-A = <input type="text" id="Eintrag132" maxlength="5" size="2" style= background-color:yellow ></input> mm<sup>2</sup> <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p></pre> 
+A = <input type="text" id="Eintrag132" maxlength="5" ></input> mm<sup>2</sup> <button id="Pruef132" onclick="Aufgabe132()">Prüfen</button></p> 
     
  
                       <script>
@@ -444,23 +501,23 @@ A = <input type="text" id="Eintrag132" maxlength="5" size="2" style= background-
                       
 <!--//Aufgabe 133-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 133
+    <h2>Aufgabe 133</h2><p>
 
-Wie groß ist die schraffierte Fläche A?  
+Wie groß ist die schraffierte Fläche A?</p>  
 
- <img src="Aufgabe133.jpg" > 
+ <img src="Aufgabe133.jpg" ></p> 
  
- <button  onclick="window.open('Flaeche_Aufgabe133.html');" >Lösung</button></p></pre>   
+ <button  onclick="window.open('Flaeche_Aufgabe133.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 134-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 134
+  <h2>Aufgabe 134</h2><p>
 
-Wie groß ist der Radius r der kleinen Kreise?  
+Wie groß ist der Radius r der kleinen Kreise?</p>  
 
-<img src="Aufgabe134.jpg" > 
+<img src="Aufgabe134.jpg" ></p> 
 
-r = <input type="text" id="Eintrag134" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p></pre> 
+r = <input type="text" id="Eintrag134" maxlength="3" ></input> cm <button id="Pruef134" onclick="Aufgabe134()">Prüfen</button></p>
     
  
                       <script>
@@ -478,23 +535,23 @@ r = <input type="text" id="Eintrag134" maxlength="3" size="1" style= background-
                       
 <!--//Aufgabe 135-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 135
+    <h2>Aufgabe 135</h2><p>
 
-Wie groß ist der Radius r der kleinen Kreise?
+Wie groß ist der Radius r der kleinen Kreise?</p>
 
-<img src="Aufgabe135.jpg" > 
+<img src="Aufgabe135.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe135.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe135.html');" >Lösung</button></p>
 
 <!--//Aufgabe 136-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 136
+  <h2>Aufgabe 136</h2><p>
 
-Wie groß ist der Radius r?   
+Wie groß ist der Radius r?</p>   
 
-<img src="Aufgabe136.jpg" > 
+<img src="Aufgabe136.jpg" ></p> 
 
-r = <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p></pre> 
+r = <input type="text" id="Eintrag136" maxlength="4" ></input> cm <button id="Pruef136" onclick="Aufgabe136()">Prüfen</button></p>
     
  
                       <script>
@@ -512,24 +569,24 @@ r = <input type="text" id="Eintrag136" maxlength="4" size="1" style= background-
                       
 <!--//Aufgabe 137-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 137
+    <h2>Aufgabe 137</h2><p>
 
-Wie groß ist der Radius r?     
+Wie groß ist der Radius r?</p>     
 
-<img src="Aufgabe137.jpg" > 
+<img src="Aufgabe137.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe137.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe137.html');" >Lösung</button></p>
 
 <!--//Aufgabe 138-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 138
+  <h2>Aufgabe 138</h2><p>
 
 Ein rechtwinkliges Dreieck hat die Fläche 
 A = 80 cm<sup>2</sup>. Eine Kathete verhält sich zur 
 Hypotenuse wie 3 : 5. 
-Wie lang sind die Dreieckseiten? 
+Wie lang sind die Dreieckseiten?</p> 
 
-Hypotenuse = <input type="text" id="Eintrag138" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p></pre> 
+Hypotenuse = <input type="text" id="Eintrag138" maxlength="4" ></input> cm <button id="Pruef138" onclick="Aufgabe138()">Prüfen</button></p>
     
  
                       <script>
@@ -547,16 +604,16 @@ Hypotenuse = <input type="text" id="Eintrag138" maxlength="4" size="1" style= ba
                       
 <!--//Aufgabe 139-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 139
+    <h2>Aufgabe 139</h2><p>
 
 Wie groß ist der Abfall in Prozent, wenn bei 
-einem Rechteck (140 mm * 200 mm) die Ecken mit 
-einem Radius von 20 mm abgerundet werden?    
+einem Rechteck <br class="br-desk">(140 mm * 200 mm) die Ecken mit 
+einem Radius von 20 mm abgerundet werden?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe139.html');" >Lösung</button></p></b></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe139.html');" >Lösung</button></p>
 
 
-          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>    
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>    
 	        
           
         <script>
