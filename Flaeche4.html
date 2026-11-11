@@ -6,19 +6,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flächenberechnungen</title>
-  
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Flächenberechnungen</p>  
@@ -26,18 +77,18 @@
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
      
-        
+<div class="check">         
                     
 <!--//Aufgabe 68-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 68
+  <h2>Aufgabe 68</h2><p>
 
 Berechnen Sie die Fläche des Vierecks, sowie die 
-Länge der Seiten a und b.   
+Länge der Seiten a und b.</p>   
 
-<img src="Aufgabe68.jpg" > 
+<img src="Aufgabe68.jpg" ></p> 
 
-b = <input type="text" id="Eintrag68" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p></pre> 
+b = <input type="text" id="Eintrag68" maxlength="3" ></input> cm <button id="Pruef68" onclick="Aufgabe68()">Prüfen</button></p> 
     
  
                       <script>
@@ -55,23 +106,23 @@ b = <input type="text" id="Eintrag68" maxlength="3" size="1" style= background-c
                       
 <!--//Aufgabe 69-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 69
+    <h2>Aufgabe 69</h2><p>
 
 Die Diagonale eines Rechtecks hat eine Länge 
-von 8 cm. Die Seite a ist 3 cm lang. 
-Wie groß sind die Fläche A und die Seite b?   
+von 8 cm. Die Seite a ist <br class="br-desk">3 cm lang. 
+Wie groß sind die Fläche A und die Seite b?</p>   
 
-<button  onclick="window.open('Flaeche_Aufgabe69.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe69.html');" >Lösung</button></p>
 
 <!--//Aufgabe 70-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 70
+  <h2>Aufgabe 70</h2><p>
 
-Ein Rechteck hat eine Fläche von 8 cm² und die 
+Ein Rechteck hat eine Fläche von 8 cm<sup>2</sup> und die 
 Seite a von 2 cm. 
-Wie groß sind die Diagonale d und die Seite b?  
+Wie groß sind die Diagonale d und die Seite b?</p>  
 
-b = <input type="text" id="Eintrag70" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p></pre> 
+b = <input type="text" id="Eintrag70" maxlength="1" ></input> cm <button id="Pruef70" onclick="Aufgabe70()">Prüfen</button></p>
     
  
                       <script>
@@ -89,28 +140,28 @@ b = <input type="text" id="Eintrag70" maxlength="1" size="1" style= background-c
                       
 <!--//Aufgabe 71-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 71
+    <h2>Aufgabe 71</h2><p>
 
 Die Seiten eines Rechtecks verhalten sich 
 wie 2 : 3. 
 Das Rechteck hat die gleiche Fläche wie ein 
 Quadrat mit der Seitenlänge 4 cm. 
 Wie groß sind die Seiten a und b und die 
-Diagonale d des Rechtecks?    
+Diagonale d des Rechtecks?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe71.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe71.html');" >Lösung</button></p>
 
 <!--//Aufgabe 72-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 72
+  <h2>Aufgabe 72</h2><p>
 
 Ein Rechteck hat die gleiche Fläche wie ein 
-Quadrat mit der Seitenlänge 4 cm. 
+Quadrat mit der Seitenlänge <br class="br-desk">4 cm. 
 Die Diagonalen von Rechteck und Quadrat 
 verhalten sich wie 3 : 2. 
-Wie groß sind die Seiten des Rechtecks?          
+Wie groß sind die Seiten des Rechtecks?</p>          
 
-Größere = <input type="text" id="Eintrag72" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p></pre> 
+Größere = <input type="text" id="Eintrag72" maxlength="3"  ></input> cm <button id="Pruef72" onclick="Aufgabe72()">Prüfen</button></p>
     
  
                       <script>
@@ -128,23 +179,23 @@ Größere = <input type="text" id="Eintrag72" maxlength="3" size="1" style= back
                       
 <!--//Aufgabe 73-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 73
+    <h2>Aufgabe 73</h2><p>
 
-Ein Parallelogramm hat eine Fläche von 12 cm², 
+Ein Parallelogramm hat eine Fläche von 12 cm<sup>2</sup>, 
 eine Seite von4 cm und eine von 8 cm. 
-Wie groß sind die Höhe und die längere Diagonale?    
+Wie groß sind die Höhe und die längere Diagonale?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe73.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe73.html');" >Lösung</button></p>
 
 <!--//Aufgabe 74-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 74
+  <h2>Aufgabe 74</h2><p>
 
 Wie groß ist die Seite eines Quadrates, das so 
 groß ist wie einRechteck mit den Seitenlängen 
-3 cm und 5 cm?  
+3 cm und 5 cm?</p>  
 
-Sie ist <input type="text" id="Eintrag74" maxlength="3" size="1" style= background-color:yellow ></input> cm groß. <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p></pre> 
+Sie ist <input type="text" id="Eintrag74" maxlength="3"  ></input> cm groß. <button id="Pruef74" onclick="Aufgabe74()">Prüfen</button></p>
     
  
                       <script>
@@ -162,27 +213,27 @@ Sie ist <input type="text" id="Eintrag74" maxlength="3" size="1" style= backgrou
                       
 <!--//Aufgabe 75-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 75
+    <h2>Aufgabe 75</h2><p>
 
 Wie groß ist die Fläche des eingeschlossenen 
-Quadrates und die Länge seiner Diagonale?    
+Quadrates und die Länge seiner Diagonale?</p>    
 
-<img src="Aufgabe75.jpg" > 
+<img src="Aufgabe75.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe75.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe75.html');" >Lösung</button></p>
 
 <!--//Aufgabe 76-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 76
+  <h2>Aufgabe 76</h2><p>
 
 Berechnen Sie die Länge der Seiten des 
 einbeschriebenen Rechtecks. Die Flächen des 
 Quadrates und des Rechtecks verhalten sich 
-wie 3 : 1.  
+wie 3 : 1.</p>  
 
-<img src="Aufgabe76.jpg"> 
+<img src="Aufgabe76.jpg"></p> 
 
-Längere Seite = <input type="text" id="Eintrag76" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p></pre> 
+Längere Seite = <input type="text" id="Eintrag76" maxlength="3" ></input> cm <button id="Pruef76" onclick="Aufgabe76()">Prüfen</button></p>
     
  
                       <script>
@@ -200,22 +251,22 @@ Längere Seite = <input type="text" id="Eintrag76" maxlength="3" size="1" style=
                       
 <!--//Aufgabe 77-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 77
+    <h2>Aufgabe 77</h2><p>
 
 Die Diagonalen einer Raute sind 4 cm und 
 6 cm lang. Wie groß sind ihre Fläche A und die 
-Länge a einer Seite?  
+Länge a einer Seite?</p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe77.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe77.html');" >Lösung</button></p>
 
 <!--//Aufgabe 78-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 78
+  <h2>Aufgabe 78</h2><p>
 
 Wie groß ist die Höhe h einer Raute, wenn ihre 
-Seiten 8 cmlang sind und eine Diagonale 3 cm? 
+Seiten 8 cm lang sind und eine Diagonale 3 cm?</p> 
 
-h = <input type="text" id="Eintrag78" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag78" maxlength="4" ></input> cm <button id="Pruef78" onclick="Aufgabe78()">Prüfen</button></p>
     
  
                       <script>
@@ -233,23 +284,23 @@ h = <input type="text" id="Eintrag78" maxlength="4" size="1" style= background-c
                       
 <!--//Aufgabe 79-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 79
+    <h2>Aufgabe 79</h2><p>
 
 Wie groß ist die Höhe h einer Raute, wenn ihre 
-Fläche 16 cm²beträgt und ihre Seiten 6 cm?    
+Fläche 16 cm<sup>2</sup> beträgt und ihre Seiten 6 cm?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe79.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe79.html');" >Lösung</button></p>
 
 <!--//Aufgabe 80-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 80
+  <h2>Aufgabe 80</h2><p>
 
 Die Diagonalen eines rechteckigen Platzes sind 
 43 m lang und schließen Winkel von 60° bzw. 
 120° ein. 
-Wie lang sind die Rechteckseiten?   
+Wie lang sind die Rechteckseiten?</p>   
 
-Längere Seite = <input type="text" id="Eintrag80" maxlength="4" size="1" style= background-color:yellow ></input> m. <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p></pre> 
+Längere Seite = <input type="text" id="Eintrag80" maxlength="4"  ></input> m. <button id="Pruef80" onclick="Aufgabe80()">Prüfen</button></p>
     
  
                       <script>
@@ -267,24 +318,24 @@ Längere Seite = <input type="text" id="Eintrag80" maxlength="4" size="1" style=
                       
 <!--//Aufgabe 81-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 81
+    <h2>Aufgabe 81</h2><p>
 
-Wie groß ist die Fläche A des Profilstahls?   
+Wie groß ist die Fläche A des Profilstahls?</p>   
 
-<img src="Aufgabe81.jpg" > 
+<img src="Aufgabe81.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe81.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe81.html');" >Lösung</button></p>
 
 <!--//Aufgabe 82-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 82
+  <h2>Aufgabe 82</h2><p>
 
 Aus einem Baumstamm soll ein rechteckiges 
 Kantholz mit denMaßen 5 cm und 12 cm 
 hergestellt werden. 
-Welchen Durchmesser d muss der Stamm haben?    
+Welchen Durchmesser d muss der Stamm haben?</p>    
 
-d = <input type="text" id="Eintrag82" maxlength="2" size="1" style= background-color:yellow ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag82" maxlength="2"  ></input> cm <button id="Pruef82" onclick="Aufgabe82()">Prüfen</button></p>
     
  
                       <script>
@@ -302,22 +353,22 @@ d = <input type="text" id="Eintrag82" maxlength="2" size="1" style= background-c
                       
 <!--//Aufgabe 83-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 83
+    <h2>Aufgabe 83</h2><p>
 
 Wie groß ist der Inkreisradius einer Raute, 
-deren Diagonalen 52 mm und 88 mm lang sind?    
+deren Diagonalen 52 mm und 88 mm lang sind?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe83.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe83.html');" >Lösung</button></p>
 
 <!--//Aufgabe 84-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 84
+  <h2>Aufgabe 84</h2><p>
 
-Wie groß sind b, d, l, u und v?    
+Wie groß sind b, d, l, u und v?</p>    
 
-<img src="Aufgabe84.jpg" > 
+<img src="Aufgabe84.jpg" ></p> 
 
-l = <input type="text" id="Eintrag84" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p></pre> 
+l = <input type="text" id="Eintrag84" maxlength="4" ></input> cm <button id="Pruef84" onclick="Aufgabe84()">Prüfen</button></p>
     
  
                       <script>
@@ -335,25 +386,25 @@ l = <input type="text" id="Eintrag84" maxlength="4" size="1" style= background-c
                       
 <!--//Aufgabe 85-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 85
+    <h2>Aufgabe 85</h2><p>
 
 Die Basis eines gleichschenkligen Dreiecks 
 ist 6 cm, ein Schenkel 8 cm lang. 
 Wie groß ist seine Fläche A, wenn ein 1 cm 
 breiter Streifen parallel zu einem Schenkel 
-abgeschnitten wird?    
+abgeschnitten wird?</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe85.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe85.html');" >Lösung</button></p>
 
-<!--//Aufgabe 88-->
+<!--//Aufgabe 86-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 86
+  <h2>Aufgabe 86</h2><p>
 
-Wie lang ist d?     
+Wie lang ist d?</p>     
 
-<img src="Aufgabe86.jpg" > 
+<img src="Aufgabe86.jpg" ></p> 
 
-d = <input type="text" id="Eintrag86" maxlength="4" size="1" style= background-color:yellow ></input> cm <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag86" maxlength="4" ></input> cm <button id="Pruef86" onclick="Aufgabe86()">Prüfen</button></p>
     
  
                       <script>
@@ -371,24 +422,23 @@ d = <input type="text" id="Eintrag86" maxlength="4" size="1" style= background-c
                       
 <!--//Aufgabe 87-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 87
+    <h2>Aufgabe 87</h2><p>
 
-Wie groß ist die Fläche A des Trapezes?    
+Wie groß ist die Fläche A des Trapezes?</p>    
 
-<img src="Aufgabe87.jpg" > 
+<img src="Aufgabe87.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe87.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe87.html');" >Lösung</button></p>
 
 <!--//Aufgabe 88-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 88
+  <h2>Aufgabe 88</h2><p>
 
-Wie groß muss man h₁ machen, damit das gleich-
-schenklige Dreieck halbiert wird?  
+Wie groß muss man h<sub>1</sub> machen, damit das gleichschenklige Dreieck halbiert wird?</p>  
 
-<img src="Aufgabe88.jpg" > 
+<img src="Aufgabe88.jpg" ></p> 
 
-h<sub>1</sub> = <input type="text" id="Eintrag88" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p></pre> 
+h<sub>1</sub> = <input type="text" id="Eintrag88" maxlength="3" ></input> cm <button id="Pruef88" onclick="Aufgabe88()">Prüfen</button></p>
     
  
                       <script>
@@ -406,28 +456,28 @@ h<sub>1</sub> = <input type="text" id="Eintrag88" maxlength="3" size="1" style= 
                       
 <!--//Aufgabe 89-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 89
+    <h2>Aufgabe 89</h2><p>
 
 Wie groß ist die Fläche A des schraffierten 
 gleichschenkligen Trapezes, das in einem 
 gleichseitigen Dreieck mit dem Umkreisradius 
-r = 6 cm liegt?     
+r = 6 cm liegt?</p>     
 
-<img src="Aufgabe89.jpg" > 
+<img src="Aufgabe89.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe89.html');" >Lösung</button></p></pre>    
+<button  onclick="window.open('Flaeche_Aufgabe89.html');" >Lösung</button></p>  
 
 <!--//Aufgabe 90-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 90
+  <h2>Aufgabe 90</h2><p>
 
 Wie groß muss h sein, wenn sich die Fläche des 
-Trapezes zurFläche des darüberliegenden Dreiecks 
-wie 3 : 2 verhält?  
+Trapezes zur Fläche des darüberliegenden Dreiecks 
+wie 3 : 2 verhält?</p>  
 
-<img src="Aufgabe90.jpg" > 
+<img src="Aufgabe90.jpg" ></p> 
 
-h = <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p></pre> 
+h = <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef90" onclick="Aufgabe90()">Prüfen</button></p>
     
  
                       <script>
@@ -445,25 +495,25 @@ h = <input type="text" id="Eintrag90" maxlength="3" size="1" style= background-c
                       
 <!--//Aufgabe 91-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 91
+    <h2>Aufgabe 91</h2><p>
 
 Wie groß sind g<sub>1</sub> und g<sub>2</sub> von dem 
-gleichschenkligen Trapez? 
+gleichschenkligen Trapez?</p> 
 
-<img src="Aufgabe91.jpg" > 
+<img src="Aufgabe91.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe91.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe91.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 92-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 92
+  <h2>Aufgabe 92</h2><p>
 
 Berechnen Sie die Höhe h, die Diagonale d und 
-die Seite a des gleichschenkligen Trapezes.   
+die Seite a des gleichschenkligen Trapezes.</p>   
 
-<img src="Aufgabe92.jpg" > 
+<img src="Aufgabe92.jpg" ></p> 
 
-d = <input type="text" id="Eintrag92" maxlength="1" size="1" style= background-color:yellow ></input> cm <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p></pre> 
+d = <input type="text" id="Eintrag92" maxlength="1" ></input> cm <button id="Pruef92" onclick="Aufgabe92()">Prüfen</button></p>
     
  
                       <script>
@@ -481,26 +531,26 @@ d = <input type="text" id="Eintrag92" maxlength="1" size="1" style= background-c
                       
 <!--//Aufgabe 93-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 93
+    <h2>Aufgabe 93</h2><p>
 
 Ein Trapez mit einer Mittellinie von 6 cm und 
 einer Höhe von 4 cm soll einem gleichseitigen 
 Dreieck flächengleich sein. 
 Berechnen Sie die Länge a einer Dreieckseite und 
-das Verhältnis der beiden Höhen.    
+das Verhältnis der beiden Höhen.</p>    
 
-<button  onclick="window.open('Flaeche_Aufgabe93.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe93.html');" >Lösung</button></p>
 
 <!--//Aufgabe 94-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 94
+  <h2>Aufgabe 94</h2><p>
 
 Berechnen Sie die Länge der Grundseite g<sub>1</sub> und 
-der Seite b. 
+der Seite b.</p> 
 
-<img src="Aufgabe94.jpg" > 
+<img src="Aufgabe94.jpg" ></p> 
 
-b = <input type="text" id="Eintrag94" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p></pre> 
+b = <input type="text" id="Eintrag94" maxlength="3" ></input> cm <button id="Pruef94" onclick="Aufgabe94()">Prüfen</button></p>
     
  
                       <script>
@@ -518,25 +568,25 @@ b = <input type="text" id="Eintrag94" maxlength="3" size="1" style= background-c
 
 <!--//Aufgabe 95-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 95
+    <h2>Aufgabe 95</h2><p>
 
 Ein gleichschenkliges Dreieck ist 12 cm hoch. 
 Es soll durch parallel verlaufende Teilstriche 
 in 3 gleich große Flächen unterteilt werden. 
-In welchen Höhen verlaufen die Teilstriche?  
+In welchen Höhen verlaufen die Teilstriche?</p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe95.html');" >Lösung</button></p></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe95.html');" >Lösung</button></p> 
 
 <!--//Aufgabe 96-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 96
+  <h2>Aufgabe 96</h2><p>
 
 Ein Rechteck ist 4 cm breit und 13 cm lang. 
 Es soll so zerteilt werden, dass zwei Trapeze 
 entstehen, deren Grundseiten 4 cmund 9 cm lang 
-sind. Wie lang ist die Schnittlinie l? 
+sind. Wie lang ist die Schnittlinie l?</p> 
 
-l = <input type="text" id="Eintrag96" maxlength="3" size="1" style= background-color:yellow ></input> cm <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p></pre> 
+l = <input type="text" id="Eintrag96" maxlength="3"  ></input> cm <button id="Pruef96" onclick="Aufgabe96()">Prüfen</button></p>
     
  
                       <script>
@@ -554,17 +604,17 @@ l = <input type="text" id="Eintrag96" maxlength="3" size="1" style= background-c
 
 <!--//Aufgabe 97-->                     
                       
-    <pre><p class="Aufgabe">Aufgabe 97
+    <h2>Aufgabe 97</h2><p>
 
 Von einem gleichschenkligen Trapez sei die eine 
 parallele Seite zweimal und die andere dreimal 
 so groß wie der Schenkel mit 3 cm. Wie groß 
-sind der Umfang U und die Fläche A des Trapezes?
+sind der Umfang U und die Fläche A des Trapezes?</p>
 
-<button  onclick="window.open('Flaeche_Aufgabe97.html');" >Lösung</button></p></b></pre>   
+<button  onclick="window.open('Flaeche_Aufgabe97.html');" >Lösung</button></p> 
 
 
-          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>
 	        
           
         <script>

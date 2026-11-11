@@ -6,37 +6,89 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name ="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flächenberechnungen</title>
-  
+
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script> 
+
 </head>
 <body style="background-color: white;">
 
     <style> 
-        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em; }
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
         .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
-        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        .Text3 { font-size: 0.6em; font-family: monospace,monospace;margin:0.5em; }
         
-        .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button { font-family: Verdana, Sans-serif; }
+        body { margin: 0; font-family: Verdana,Sans-serif; font-size: 1.05rem; line-height: 1.2; background: #fff; }  
+       main { max-width: 40rem; margin: 0 auto; padding: 1rem; }
+h1 { font-size: 1.5rem; }
+h2 { font-size: 1rem; margin: 1.4rem 0 0.3rem; }
+.check input { font-size: 1.05rem; padding: 0.2rem; width: 4rem; }
+.check button { font-size: 1.05rem; padding: 0.2rem 0.6rem; } 
+.br-mobil {
+            display: none;}
+.br-desk {
+            display: block;}
+.desktop-break {
+            display: block;
+                 content: "";   
+                 height: 0.8em;  }
+.desktop-plus {
+            display: inline-block;}
+.mobile-break {
+            display: none; }            
+.mobile-plus {
+            display: none;}  
+
+@media screen and (max-width: 576px) {
+
+            .br-mobil {
+                display: block;}
+
+            .br-desk {
+                display: none;} 
+
+            .desktop-break {
+                display: none; }    
+                
+            .desktop-plus {
+                display: none; }
+
+            .mobile-break {
+                 display: block;
+                 content: "";   
+                 height: 0.8em;  }                
+                          
+            .mobile-plus {
+                 display: inline-block; }
+                           
+                }
+
         input {background-color:yellow; }
+        
     </style>
+
+    <main>
 
     <p class="Text1">Wie löse ich Matheaufgaben?</p>
 		<p class="Text1">Flächenberechnungen</p>
     
     <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
 	  <p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
-     
+
+    <div class="check">      
         
 <!--//Aufgabe 26-->
 
-  <pre><b><p class ="Aufgabe" >Aufgabe 26
+  <h2>Aufgabe 26</h2><p>
 
 Ein rechteckiges Grundstück A ist 861 m<sup>2</sup> groß und 
-hat eine Breite von 21 m. Grundstück B ist 738 m<sup>2</sup> 
+hat eine Breite von <br class="br-desk">21 m. Grundstück B ist 738 m<sup>2</sup> 
 groß und hat eine Breite von 18 m. 
-Wie lang sind sie jeweils?  
+Wie lang sind sie jeweils?</p>  
 
-A ist <input type="text" id="Eintrag26" maxlength="2" size="1" style= background-color:yellow ></input> m lang. <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p></pre>
+A ist <input type="text" id="Eintrag26" maxlength="2" ></input> m lang. <button id="Pruef26" onclick="Aufgabe26()">Prüfen</button></p>
     
                       <script>
                         function Aufgabe26() { 
@@ -53,25 +105,27 @@ A ist <input type="text" id="Eintrag26" maxlength="2" size="1" style= background
                       
      <!--//Aufgabe 27--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 27
+    <h2>Aufgabe 27</h2><p>
 
 Ein trapezförmiges Grundstück hat eine Fläche 
-von 400 m<sup>2</sup>.Die parallelen Seiten sind zur Straße 
+von 400 m<sup>2</sup>. Die parallelen Seiten sind zur Straße 
 20 m zum Garten 12 m lang. 
-Wie tief ist das Grundstück?   <button  onclick="window.open('Flaeche_Aufgabe27.html');" >Lösung</button></p></pre>
+Wie tief ist das Grundstück?</p>
+
+<button  onclick="window.open('Flaeche_Aufgabe27.html');" >Lösung</button></p>
 
 <!--//Aufgabe 28-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 28
+  <h2>Aufgabe 28</h2><p>
 
 Die 4 Grundstücke werden eingezäunt. Die Besitzer 
 haben vereinbart, zwischen benachbarten 
 Grundstücken nur einen Zaun zu ziehen. 
-Wie lang ist der Zaun insgesamt?  
+Wie lang ist der Zaun insgesamt?</p>  
 
-<img src="Aufgabe28.jpg">
+<img src="Aufgabe28.jpg"></p>
 
-Es sind <input type="text" id="Eintrag28" maxlength="3" size="1" style= background-color:yellow ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p></pre>
+Es sind <input type="text" id="Eintrag28" maxlength="3"  ></input> m <button id="Pruef28" onclick="Aufgabe28()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe28() { 
@@ -88,24 +142,24 @@ Es sind <input type="text" id="Eintrag28" maxlength="3" size="1" style= backgrou
                       
        <!--//Aufgabe 29--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 29
+    <h2>Aufgabe 29</h2><p>
 
 Wie groß ist die Gesamtfläche des Daches? 
-Wie lang ist die Dachrinne?  
+Wie lang ist die Dachrinne?</p>  
 
-<img src="Aufgabe29.jpg" > 
+<img src="Aufgabe29.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe29.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe29.html');" >Lösung</button></p>
 
 <!--//Aufgabe 30-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 30
+ <h2>Aufgabe 30</h2><p>
 
-Wie groß ist das Abdeckblech?   
+Wie groß ist das Abdeckblech?</p>   
 
-<img src="Aufgabe30.jpg" > 
+<img src="Aufgabe30.jpg" ></p> 
 
-Es sind <input type="text" id="Eintrag30" maxlength="7" size="3" style= background-color:yellow ></input> cm<sup>2</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p></pre>
+Es sind <input type="text" id="Eintrag30" maxlength="7"  ></input> cm<sup>2</sup> <button id="Pruef30" onclick="Aufgabe30()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe30() { 
@@ -122,24 +176,24 @@ Es sind <input type="text" id="Eintrag30" maxlength="7" size="3" style= backgrou
                       
        <!--//Aufgabe 31--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 31
+    <h2>Aufgabe 31</h2><p>
 
 Die Erde braucht 365 Tage, um die Sonne einmal 
 zu umkreisen. 
 Der Radius der Umlaufbahn ist 150 Millionen km. 
 Wie lang ist die Umlaufbahn? 
-Wie hoch ist die Geschwindigkeit der Erde?  
+Wie hoch ist die Geschwindigkeit der Erde?</p>  
 
- <button  onclick="window.open('Flaeche_Aufgabe31.html');" >Lösung</button></p></pre>
+ <button  onclick="window.open('Flaeche_Aufgabe31.html');" >Lösung</button></p>
 
 <!--//Aufgabe 32-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 32
+  <h2>Aufgabe 32</h2><p>
 
 Ein Sender hat eine Reichweite von 65 km.
-Wie groß ist sein Sendegebiet?         
+Wie groß ist sein Sendegebiet?</p>         
 
-Es sind <input type="text" id="Eintrag32" maxlength="7" size="3" style= background-color:yellow ></input> km<sup>2</sup> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p></pre>
+Es sind <input type="text" id="Eintrag32" maxlength="7"  ></input> km<sup>2</sup> <button id="Pruef32" onclick="Aufgabe32()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe32() { 
@@ -156,23 +210,25 @@ Es sind <input type="text" id="Eintrag32" maxlength="7" size="3" style= backgrou
                       
        <!--//Aufgabe 33--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 33
+    <h2>Aufgabe 33</h2><p>
 
 Der Deckel hat einen Durchmesser von 10 dm und 
-dieweiße Aussparung. 
-Wie groß ist die Restfläche?     
+die weiße Aussparung. 
+Wie groß ist die Restfläche?</p>     
 
-<img src="Aufgabe33.jpg" align="middle"> <button  onclick="window.open('Flaeche_Aufgabe33.html');" >Lösung</button></p></pre>
+<img src="Aufgabe33.jpg" ></p> 
+
+<button  onclick="window.open('Flaeche_Aufgabe33.html');" >Lösung</button></p>
 
 <!--//Aufgabe 34-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 34
+  <h2>Aufgabe 34</h2><p>
 
 Ein Leuchtturm hat eine Reichweite von 14 km. 
 Er überstreicht einen Winkel von 90°. 
-Wie groß ist die beleuchtete Fläche?              
+Wie groß ist die beleuchtete Fläche?</p>              
 
-A = <input type="text" id="Eintrag34" maxlength="5" size="2" style= background-color:yellow ></input> km<sup>2</sup> <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p></pre>
+A = <input type="text" id="Eintrag34" maxlength="5" ></input> km<sup>2</sup> <button id="Pruef34" onclick="Aufgabe34()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe34() { 
@@ -189,26 +245,26 @@ A = <input type="text" id="Eintrag34" maxlength="5" size="2" style= background-c
                       
        <!--//Aufgabe 35--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 35
+    <h2>Aufgabe 35</h2><p>
 
 Ein 150° Sektor eines kreisrunden Beetes mit einem 
 Radius von 5 m wird mit Rosen bepflanzt. Für 1 m<sup>2</sup> 
 braucht man 9 Rosen.
 Wie groß ist die bepflanzte Fläche? 
-Wie viele Rosen braucht man?  
+Wie viele Rosen braucht man?</p>  
 
- <button  onclick="window.open('Flaeche_Aufgabe35.html');" >Lösung</button></p></pre>
+ <button  onclick="window.open('Flaeche_Aufgabe35.html');" >Lösung</button></p>
 
 <!--//Aufgabe 36-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 36
+  <h2>Aufgabe 36</h2><p>
 
 Ein runder Brunnen mit einem Radius von 3 m steht 
 auf einem runden Platz mit einem Durchmesser 
 von 60 m. 
-Wie groß ist die zu pflasternde Fläche A?    
+Wie groß ist die zu pflasternde Fläche A?</p>    
 
-A = <input type="text" id="Eintrag36" maxlength="6" size="2" style= background-color:yellow ></input> m<sup>2</sup> <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p></pre>
+A = <input type="text" id="Eintrag36" maxlength="6"  ></input> m<sup>2</sup> <button id="Pruef36" onclick="Aufgabe36()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe36() { 
@@ -225,27 +281,27 @@ A = <input type="text" id="Eintrag36" maxlength="6" size="2" style= background-c
                       
        <!--//Aufgabe 37--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 37
+    <h2>Aufgabe 37</h2><p>
 
 Ein Gärtner soll rund um einen Platz, der 180 m 
 lang und 105 m breit ist, Bäume im Abstand 
 von 15 m anpflanzen.
-Wie viele Bäume braucht er?   
+Wie viele Bäume braucht er?</p>   
 
-<img src="Aufgabe37.jpg" >  
+<img src="Aufgabe37.jpg" ></p>  
 
-<button  onclick="window.open('Flaeche_Aufgabe37.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe37.html');" >Lösung</button></p>
 
 <!--//Aufgabe 38-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 38
+  <h2>Aufgabe 38</h2><p>
 
 Ein Bauherr soll seine Baugrube von 15 m Länge 
 und 8 m  Breite durch ein Band absichern. 
 Wie viel m Band braucht er,wenn er es im Abstand 
-von 2 m zur Grube anbringen will?  
+von <br class="br-desk">2 m zur Grube anbringen will?</p>  
 
-Er braucht <input type="text" id="Eintrag38" maxlength="2" size="1" style= background-color:yellow ></input> m Band. <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p></pre>
+Er braucht <input type="text" id="Eintrag38" maxlength="2" ></input> m Band. <button id="Pruef38" onclick="Aufgabe38()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe38() { 
@@ -262,24 +318,24 @@ Er braucht <input type="text" id="Eintrag38" maxlength="2" size="1" style= backg
                       
        <!--//Aufgabe 39--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 39
+    <h2>Aufgabe 39</h2><p>
 
 Für 162 Fahrzeuge steht ein rechteckiges Gelände 
-von 55 m Länge und 39 m Breite zur Verfügung. 
+von 55 m Länge und <br class="br-desk">39 m Breite zur Verfügung. 
 Für die Zufahrtswege braucht man 450 m<sup>2</sup>. 
-Wie viel Platz ergibt sich für 1 Fahrzeug?   
+Wie viel Platz ergibt sich für 1 Fahrzeug?</p>   
 
-<button  onclick="window.open('Flaeche_Aufgabe39.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe39.html');" >Lösung</button></p>
 
 <!--//Aufgabe 40-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 40
+  <h2>Aufgabe 40</h2><p>
 
 Eine Bauer will seine kreisrunde Wiese umzäunen. 
 Sie hat eine Fläche von 254,5 m<sup>2</sup>. 
-Wie lang muss der Zaun sein?  
+Wie lang muss der Zaun sein?</p>  
 
-Er muss <input type="text" id="Eintrag40" maxlength="4" size="1" style= background-color:yellow ></input> m lang sein. <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p></pre>
+Er muss <input type="text" id="Eintrag40" maxlength="4"  ></input> m lang sein. <button id="Pruef40" onclick="Aufgabe40()">Prüfen</button></p>
  
                       <script>
                         function Aufgabe40() { 
@@ -296,25 +352,25 @@ Er muss <input type="text" id="Eintrag40" maxlength="4" size="1" style= backgrou
                       
        <!--//Aufgabe 41--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 41
+    <h2>Aufgabe 41</h2><p>
 
 Berechnen Sie die Fläche der Holzverkleidung, 
-wenn Sie mit 20% für Verschnitt rechnen müssen.  
+wenn Sie mit 20% für Verschnitt rechnen müssen.</p>  
 
-<img src="Aufgabe41.jpg" > 
+<img src="Aufgabe41.jpg" ></p> 
 
-<button  onclick="window.open('Flaeche_Aufgabe41.html');" >Lösung</button></p></pre>
+<button  onclick="window.open('Flaeche_Aufgabe41.html');" >Lösung</button></p>
 
 <!--//Aufgabe 42-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 42
+  <h2>Aufgabe 42</h2><p>
 
 Ein Restgartengrundstück hat die Form eines 
-Kreisausschnitts,mit einer Bogenlänge von 6 m und 
+Kreisausschnitts, mit einer Bogenlänge von 6 m und 
 einem Radius von 4,5 m. 
-Wie groß ist seine Fläche? 
+Wie groß ist seine Fläche?</p> 
 
-Es sind <input type="text" id="Eintrag42" maxlength="4" size="1" style= background-color:yellow > m<sup>2</sup> <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p></pre> 
+Es sind <input type="text" id="Eintrag42" maxlength="4" > m<sup>2</sup> <button id="Pruef42" onclick="Aufgabe42()">Prüfen</button></p>
     
  
                       <script>
@@ -332,24 +388,24 @@ Es sind <input type="text" id="Eintrag42" maxlength="4" size="1" style= backgrou
                       
        <!--//Aufgabe 43--> 
                       
-    <pre><p class="Aufgabe">Aufgabe 43
+    <h2>Aufgabe 43</h2><p>
 
 Ein Bahngleis macht über einen Winkel von 35° 
 einen 175 m langen Bogen. 
 Welchen Durchmesser hat der Kreis, auf dem der 
-Zug fährt?  
+Zug fährt?</p>  
 
- <button  onclick="window.open('Flaeche_Aufgabe43.html');" >Lösung</button></p></pre>
+ <button  onclick="window.open('Flaeche_Aufgabe43.html');" >Lösung</button></p>
 
 <!--//Aufgabe 44-->
 
-  <pre><p class ="Aufgabe" >Aufgabe 44
+  <h2>Aufgabe 44</h2><p>
 
 Für ein Spielfeld benötigt man 2 konzentrische 
 Kreise, deren Radien sich wie 2:3 verhalten 
-müssen. Wie verhalten sich deren Flächen?   
+müssen. Wie verhalten sich deren Flächen?</p>   
 
-Sie verhalten sich wie <input type="text" id="Eintrag44" maxlength="1" size="1" style= background-color:yellow ></input> :9 <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p></b></pre> 
+Sie verhalten sich wie <input type="text" id="Eintrag44" maxlength="1" ></input> :9 <button id="Pruef44" onclick="Aufgabe44()">Prüfen</button></p>
     
  
                       <script>
@@ -366,7 +422,7 @@ Sie verhalten sich wie <input type="text" id="Eintrag44" maxlength="1" size="1" 
                       </script>  
                       
                 
-          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a>
+          <a href= "index.html" ><p class="Text2" > <span style= >zurück</span></p></a></div></main>
           
         <script>
             document.body.addEventListener("input", function(inputEvent) {
